@@ -6,5 +6,4 @@ def h(max_value = 0)
 	puts "Somme des multiples de 3 et 5 inférieurs à #{max_value} = #{sum_multiples}"
 end
 
-#my_value = gets.chomp.to_i
 h(1000)
