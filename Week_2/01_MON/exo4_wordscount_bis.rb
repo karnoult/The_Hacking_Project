@@ -32,6 +32,6 @@ def find_text_in_file(filename, dictionary)
 	puts occurences
 end
  
-dictionary = ["below", "down", "go", "going", "horn", "how", "howdy", "it", "i", "low", "own", "part", "partner", "sit"]	
+dictionary = ["the", "of", "and", "to", "a", "in", "for", "is", "on", "that", "by", "this", "with", "i", "you", "it", "not", "or", "be", "are"]
 
 find_text_in_file('shakespeare.txt', dictionary)
