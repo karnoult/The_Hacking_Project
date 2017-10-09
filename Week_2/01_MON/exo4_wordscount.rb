@@ -1,6 +1,6 @@
 def jean_michel_data(corpus, dictionary)
 
-	occurences = {}
+	occurences = Hash.new(0) 
 
 	#corpus : update to downcase and split words
 	corpus_words = corpus.downcase.split(' ')
@@ -10,24 +10,18 @@ def jean_michel_data(corpus, dictionary)
 		
 		#navigate through corpus
 		corpus_words.each do |corpus_word|
-			
-			if corpus_word.include? dictionary_word
-				#add to the occurences hash
-				if occurences.has_key? dictionary_word
-					occurences[dictionary_word] = (occurences[dictionary_word] + 1)
-				else
-					occurences[dictionary_word] = 1
-				end
-			end
-			
+	
+			#increment hash if the dictionary word is found in the corpus
+			occurences[dictionary_word] += 1 if corpus_word.include? dictionary_word
+
 		end
+
 	end
 
-	puts occurences
-
+	return occurences
 end
 
 corpus = "Howdy partner, sit down! How's it going?"
 
 dictionary = ["below", "down", "go", "going", "horn", "how", "howdy", "it", "i", "low", "own", "part", "partner", "sit"]	
-jean_michel_data(corpus, dictionary)
+puts jean_michel_data(corpus, dictionary)
