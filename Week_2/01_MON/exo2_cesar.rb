@@ -1,6 +1,9 @@
 def chiffre_de_cesar(initial_text, shift)
 	final_text = ""
 
+	#recalculer le décalage pour qu'il reste inférieur à 26
+	shift = shift % 26
+
 	#passer sur toutes les lettres du texte initial
 	initial_text.chars.each do |initial_car|
 		
