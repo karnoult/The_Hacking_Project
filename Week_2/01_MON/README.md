@@ -1,7 +1,7 @@
 ## Task 
-Exo 1 = Multiples
-Exo 2 = Text encoding
-Exo 3 = Stocks analysis
+Exo 1 = Multiples\n
+Exo 2 = Text encoding\n
+Exo 3 = Stocks analysis\n
 Exo 4 = Words count
 
 ## Techno
