@@ -46,14 +46,14 @@ end
 
 search_options = {
   result_type: "recent",
-  geocode: "48.8566667,2.3509871,10mi"
+  locations: "48.8566667,2.3509871,10mi"
 }
 
 filter_options = {
   track: "faim",
   result_type: "recent",
-  geocode: "48.8566667,2.3509871,10mi"
+  locations: "48.8566667,2.3509871,10mi"
 }
 
-#search_twitter("faim", search_options, client_rest)
-filter_twitter(filter_options, client_stream, client_rest)
+search_twitter("faim", search_options, client_rest)
+#filter_twitter(filter_options, client_stream, client_rest)
