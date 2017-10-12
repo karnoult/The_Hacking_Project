@@ -48,6 +48,7 @@ class TwitterBot
         puts tweet.text
         spam(tweet)
       end
+    end
   end
 
 end
@@ -64,5 +65,5 @@ filter_options = {
 }
 
 my_bot = TwitterBot.new
-my_bot.search_twitter("faim", search_options, 100)
-#my_bot.filter_twitter(filter_options)
+#my_bot.search_twitter("faim", search_options, 100)
+my_bot.filter_twitter(filter_options)
