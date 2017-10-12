@@ -15,7 +15,7 @@ def get_crypto_and_price
   page_coinmarketcap.xpath("//a[@class=\"price\"]").each do |node|
     list_crypto_and_price << {
       time: time,
-      name: node[:href]["/currencies/".size, node[:href].size].split("\/")[0],
+      name: node[:href].split("/")[2],
       price: node.text
     }
   end
