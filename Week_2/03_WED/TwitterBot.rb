@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
+#use twitter gem
 require "twitter"
 
 $client_stream = Twitter::Streaming::Client.new do |config|
@@ -30,33 +31,23 @@ class TwitterBot
     end
   end
 
+  # search the last [nb_results] tweets containing a specific [term] with the [options] applied
   def search_twitter(term, options, nb_results)
-    begin
-      $client_rest.search(term, options).take(nb_results).each do |tweet|
-        if tweet.is_a?(Twitter::Tweet)
-          puts tweet.text
-          #puts $client_rest.rate_limit.to_s
-          spam(tweet)
-        end
+    $client_rest.search(term, options).take(nb_results).each do |tweet|
+      if tweet.is_a?(Twitter::Tweet)
+        puts tweet.text
+        spam(tweet)
       end
-    rescue Twitter::Error >> e
-      puts ">>> This tweet has already been treated: " + e.to_s
     end
   end
 
+  # search the last [nb_results] tweets containing a specific [term] with the [options] applied
   def filter_twitter(options)
-    begin
-      $client_stream.filter(options) do |tweet|
-        if tweet.is_a?(Twitter::Tweet) && !tweet.text.start_with?("RT ")
-          puts tweet.text
-          spam(tweet)
-        end
+    $client_stream.filter(options) do |tweet|
+      if tweet.is_a?(Twitter::Tweet)
+        puts tweet.text
+        spam(tweet)
       end
-    rescue Twitter::Error => e
-      puts ">>> Exception Class: #{ e.class.name }"
-      puts ">>> Exception Message: #{ e.message }"
-      puts ">>> Exception Backtrace: #{ e.backtrace }"
-    end
   end
 
 end
