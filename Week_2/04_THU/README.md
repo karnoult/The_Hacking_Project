@@ -1,1 +1,8 @@
-https://www.engineyard.com/blog/getting-started-with-nokogiri#data-extraction
+## Task
+Web scraping 
+
+## Techno
+
+- Ruby
+- gem Nokogiri 
+- XPATH

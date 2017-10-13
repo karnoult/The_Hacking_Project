@@ -5,5 +5,5 @@
 ## Techno
 
 - Ruby
-- pry
+- gem pry
 - gem Twitter
