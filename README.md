@@ -8,6 +8,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
 - **CSS**: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
 - **Ruby**
   - **Core**: http://ruby-doc.org/core-2.4.2/
+  - **Style guide**: https://github.com/bbatsov/ruby-style-guide
   - **Gems**
     - **Pry** (runtime dev console): https://github.com/pry/pry/wiki
     - **Nokogiri** (HTML parser w/ CSS and XPATH): http://www.rubydoc.info/github/sparklemotion/nokogiri
@@ -50,7 +51,7 @@ end
 
 - Loop
 ```
-(1..100).select do |i|
+(1..100).each do |i|
   ...
 end
 ```
