@@ -34,6 +34,7 @@ class TownhallsRetriever
     return list_info_townhall
   end
 
+  # returns townhall name + email in a hash {name_townhall: email_townhall}
   def townhalls_info
     url_department = "http://annuaire-des-mairies.com/val-d-oise.html"
     townhalls = {}
