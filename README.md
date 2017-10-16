@@ -9,14 +9,14 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
 - **Ruby**
   - **Core**: http://ruby-doc.org/core-2.4.2/
   - **Gems**
-    - Pry (runtime dev console): https://github.com/pry/pry/wiki
+    - **Pry** (runtime dev console): https://github.com/pry/pry/wiki
     - **Nokogiri** (HTML parser): http://www.rubydoc.info/github/sparklemotion/nokogiri
-    - Watir (web app testing)
+    - **Watir** (web app testing)
       - http://www.rubydoc.info/gems/watir/
       - http://watir.com/guides/
-    - Twitter: http://www.rubydoc.info/gems/twitter
-    - Google Drive: https://github.com/gimite/google-drive-ruby
-- Github formatting: https://help.github.com/articles/basic-writing-and-formatting-syntax/
+    - **Twitter**: http://www.rubydoc.info/gems/twitter
+    - **Google Drive**: https://github.com/gimite/google-drive-ruby
+- **Github** formatting: https://help.github.com/articles/basic-writing-and-formatting-syntax/
 
 ### Ruby basics
 - Display in the terminal
