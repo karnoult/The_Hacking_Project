@@ -19,9 +19,9 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
 
 ### Ruby basics
 - Display in the terminal
-`puts "Hello World!'`
+`puts "Hello World!"`
 - Assign a value to a variable
-  - an Integer: `my_variable = 1`
+  - an Integer `my_variable = 1`
   - a Table
   ```
   my_variable = ["Jack", "Katelyn", "Zoe"]
@@ -32,7 +32,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
   my_variable = {:name => "Jack", :city => "New-York"}
   my_variable[:age] = 45
   ```
-  - an instance of any Object: `my_variable = my_instance`
+  - an instance of any Object `my_variable = my_instance`
 - Navigate through a table
 ```
   my_table.each do |my_value|
