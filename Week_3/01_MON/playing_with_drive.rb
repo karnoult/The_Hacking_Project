@@ -5,12 +5,10 @@ require_relative 'TownhallsRetriever'
 my_session = GoogleDrive::Session.from_config("config.json")
 
 # retrieves spreadsheet
-my_spreadsheet = my_session.spreadsheet_by_title("Ruby - playing with Drive")
+my_spreadsheet = my_session.spreadsheet_by_title("Ruby_Drive")
 
 # creates a new spreadsheet if it doesn't exist already
-if my_spreadsheet.nil?
-  my_spreadsheet = my_session.create_spreadsheet("Ruby - playing with Drive")
-end
+my_spreadsheet = my_session.create_spreadsheet("Ruby_Drive") if !my_spreadsheet
 
 # get the first worksheet and (re)name it
 my_worksheet = my_spreadsheet.worksheets[0]
