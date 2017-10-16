@@ -36,7 +36,7 @@ class TwitterBot
     $client_rest.search(term, options).take(nb_results).each do |tweet|
       if tweet.is_a?(Twitter::Tweet)
         puts tweet.text
-        spam(tweet)
+        #spam(tweet)
       end
     end
   end
@@ -46,7 +46,7 @@ class TwitterBot
     $client_stream.filter(options) do |tweet|
       if tweet.is_a?(Twitter::Tweet)
         puts tweet.text
-        spam(tweet)
+        #spam(tweet)
       end
     end
   end
@@ -55,15 +55,14 @@ end
 
 search_options = {
   result_type: "recent",
-  locations: "48.8566667,2.3509871,10mi"
+  geocode: "48.8566667,2.3509871,10mi"
 }
 
 filter_options = {
-  result_type: "recent",
-  locations: "48.8566667,2.3509871,10mi",
-  track: "faim"
+  track: "faim",
+  locations: "48.86,2.27,49.86,2.44"
 }
 
 my_bot = TwitterBot.new
-#my_bot.search_twitter("faim", search_options, 100)
-my_bot.filter_twitter(filter_options)
+my_bot.search_twitter("faim", search_options, 10)
+#my_bot.filter_twitter(filter_options)
