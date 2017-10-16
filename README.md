@@ -18,9 +18,10 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
 - Github formatting: https://help.github.com/articles/basic-writing-and-formatting-syntax/
 
 ### Ruby basics
-
-- Assign a value to a variable:
-  - an Integer `my_variable = 1`
+- Display in the terminal
+`puts "Hello World!'`
+- Assign a value to a variable
+  - an Integer: `my_variable = 1`
   - a Table
   ```
   my_variable = ["Jack", "Katelyn", "Zoe"]
@@ -32,13 +33,13 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
   my_variable[:age] = 45
   ```
   - an instance of any Object: `my_variable = my_instance`
-- Navigate through a table:
+- Navigate through a table
 ```
   my_table.each do |my_value|
     ...
   end
 ```
-- Loop:
+- Loop
 ```
 (1..100).select do |i|
   ...
@@ -51,7 +52,7 @@ end
 end
 ```
 
-- Define a class:
+- Define a class
 ```
 class MyClassName
 
@@ -67,7 +68,11 @@ class MyClassName
   end
 end
 ```
-- Manage exceptions:
+
+- Get all methods of a class
+`Integer.instance_methods(false)`
+
+- Manage exceptions
 ```
 begin
   ... instructions ...
