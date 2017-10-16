@@ -51,7 +51,7 @@ end
 
 - Loop
 ```
-(1..100).select do |i|
+(1..100).each do |i|
   ...
 end
 ```
