@@ -15,6 +15,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
       - http://www.rubydoc.info/gems/watir/
       - http://watir.com/guides/
     - Twitter: http://www.rubydoc.info/gems/twitter
+    - Google Drive: https://github.com/gimite/google-drive-ruby
 - Github formatting: https://help.github.com/articles/basic-writing-and-formatting-syntax/
 
 ### Ruby basics
