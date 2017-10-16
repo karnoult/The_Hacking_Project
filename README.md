@@ -25,6 +25,23 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
   - a Hash `my_variable = {:name = "Jack", :city = "New-York"}`
   - an instance of any Object: `my_variable = my_instance`
 - Navigate through a table:
+```
+  my_table.each do |my_value|
+    ...
+  end
+```
+- Loop:
+```
+(1..100).select do |i|
+  ...
+end
+```
+
+```
+100.times do |i|
+  ...
+end
+```
 
 - Define a class:
 ```
@@ -33,11 +50,20 @@ class MyClassName
   attr_accessor :my_attribute
 
   def initialize
+    @my_attribute = "toto"
     ...
   end
   
   def my_method
     ...
   end
+end
+```
+- Manage exceptions:
+```
+begin
+  ... instructions ...
+rescue ERROR_TO_CATCH => my_error
+  ... instructions ...
 end
 ```
