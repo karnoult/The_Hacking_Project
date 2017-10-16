@@ -30,16 +30,24 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
   ```
   - a Hash
   ```
-  my_variable = {:name => "Jack", :city => "New-York"}
+  my_variable = {name: "Jack", city: "New-York"}
+  my_variable = {:name => "Jack", :city => "New-York"} // older syntax
   my_variable[:age] = 45
   ```
   - an instance of any Object `my_variable = my_instance`
-- Navigate through a table
+- Iterate through a table
 ```
   my_table.each do |my_value|
     ...
   end
 ```
+- Iterate through a hash
+```
+my_hash.each do |key, value|
+  ...
+end
+```
+
 - Loop
 ```
 (1..100).select do |i|
