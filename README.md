@@ -22,74 +22,21 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
   - Handling **errors**: http://blog.honeybadger.io/a-beginner-s-guide-to-exceptions-in-ruby/
 - **Github** formatting: https://help.github.com/articles/basic-writing-and-formatting-syntax/
 
-### Ruby basics
-- Display in the terminal
-`puts "Hello World!"`
-- Assign a value to a variable
-  - an Integer `my_variable = 1`
-  - a Table
-  ```
-  my_variable = ["Jack", "Katelyn", "Zoe"]
-  my_variable << "Isa"
-  ```
-  - a Hash
-  ```
-  my_variable = {name: "Jack", city: "New-York"}
-  my_variable = {:name => "Jack", :city => "New-York"} // older syntax
-  my_variable[:age] = 45
-  ```
-  - an instance of any Object `my_variable = my_instance`
-- Iterate through a table
-```
-  my_table.each do |my_value|
-    ...
-  end
-```
-- Iterate through a hash
-```
-my_hash.each do |key, value|
-  ...
-end
-```
+### Cursus
 
-- Loop
-```
-(1..100).each do |i|
-  ...
-end
-```
-
-```
-100.times do |i|
-  ...
-end
-```
-
-- Define a class
-```
-class MyClassName
-
-  attr_accessor :my_attribute
-
-  def initialize
-    @my_attribute = "toto"
-    ...
-  end
-  
-  def my_method
-    ...
-  end
-end
-```
-
-- Get all methods of a class
-`Integer.instance_methods(false)`
-
-- Manage exceptions
-```
-begin
-  ... instructions ...
-rescue ERROR_TO_CATCH => my_error
-  ... instructions ...
-end
-```
+- **Week 1**
+  - **Wednesday:** HTML / CSS
+  - **Thursday:** HTML / CSS / JavaScript
+  - **Friday:** HTML / CSS / jQuery
+- **Week 2**
+  - **Monday:** Ruby
+  - **Tuesday:** Ruby / RSpec
+  - **Wednesday:** Ruby / gem pry / gem Twitter
+  - **Thursday:** Ruby / gem Nokogiri / XPATH
+  - **Friday:** Ruby / gem Watir
+- **Week 3**
+  - **Monday:** Ruby (File / JSON / CSV) / gem Google Drive
+  - **Tuesday:** Ruby / gem Gmail
+  - **Wednesday:**
+  - **Thursday:**
+  - **Friday:**
