@@ -18,6 +18,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
     - **Twitter**: http://www.rubydoc.info/gems/twitter
     - **Google Drive** (read/write Google Drive files/spreadsheets): https://github.com/gimite/google-drive-ruby
   - Test Driven Development w/ **RSpec**: http://blog.teamtreehouse.com/an-introduction-to-rspec
+  - Handling **errors**: http://blog.honeybadger.io/a-beginner-s-guide-to-exceptions-in-ruby/
 - **Github** formatting: https://help.github.com/articles/basic-writing-and-formatting-syntax/
 
 ### Ruby basics
