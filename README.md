@@ -32,7 +32,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
   - **Monday:** Ruby
   - **Tuesday:** Ruby / RSpec
   - **Wednesday:** Ruby / gem pry / gem Twitter
-  - **Thursday:** Ruby / gem Nokogiri / XPATH
+  - **Thursday:** Ruby (XPath) / gem Nokogiri
   - **Friday:** Ruby / gem Watir
 - **Week 3**
   - **Monday:** Ruby (File / JSON / CSV) / gem Google Drive
