@@ -41,7 +41,7 @@ class Board
     @winning_combinations = [
       [1, 2, 3], [4, 5, 6], [7, 8, 9],
       [1, 4, 7], [2, 5, 8], [3, 6, 9],
-      [1, 5, 9], [7, 8, 9],
+      [1, 5, 9], [3, 5, 7],
     ]
   end
 
@@ -92,30 +92,29 @@ class Game
     end
   end
 
+  # asks the player to play and updates the board
   def play_turn
     puts "#{@players[@turns%2].name} c'est a ton tour de jouer :"
     case_selected = gets.chomp
-    # binding.pry
+    # fills the board with the player sign
     @board.board_spaces[case_selected.to_i - 1].state = @players[@turns%2].sign
+    #displays the board
     @board.display_board
   end
 
+  # returns true if there is a winner
   def is_there_a_winner
-    return false if @turns < 5
+    return false if @turns < 5 # there can't be a winner before turn n°5
 
-    @board.winning_combinations.each do |winning_spaces|
+    # checks each winning combination
+    @board.winning_combinations.each do |combination|
       checked_spaces = []
-      winning_spaces.each do |i|
+      combination.each do |i|
         checked_spaces << @board.board_spaces[i-1].state
       end
       concat_spaces = checked_spaces.join
-      if !concat_spaces.include?(" ")
-        case concat_spaces
-        when @players[0].sign * 3
-          return @players[0]
-        when @players[1].sign * 3
-          return @players[1]
-        end
+      if concat_spaces !=~ /\d/
+        return true if concat_spaces == @players[0].sign * 3 || concat_spaces == @players[1].sign * 3
       end
     end
 
