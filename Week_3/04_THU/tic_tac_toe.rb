@@ -5,8 +5,9 @@ class Player
   attr_accessor :name
   attr_accessor :sign
 
-  def initialize(_name, _sign)
-    @name = _name
+  def initialize(_sign, _player_id)
+    puts "Quel est ton nom joueur #{_player_id} ?"
+    @name = gets.chomp
     @sign = _sign # character that will be displayed when the player marks a space
   end
 
@@ -68,54 +69,65 @@ end
 class Game
 
   def initialize
-    @turns = 0 # count turns played
+    @turns = 0 # count turn number
+    @cases_remaining = [1, 2, 3, 4, 5, 6, 7, 8, 9] # stores cases that can still be played
   end
 
   def launch_game
     # creates players
-    @players = [Player.new("PLAYER_2", "O"), Player.new("PLAYER_1", "X")]
+    @players = [Player.new("X", 1), Player.new("O", 2)]
 
     # creates board and display it
     @board = Board.new
     @board.display_board
 
     loop do
-      @turns += 1
       play_turn
       if is_there_a_winner # if a player has won leave the game
         puts "#{@players[@turns%2].name} A GAGNE"
         break
-      elsif @turns == 9 # after 9 turns, if no one has won leave the game
+      elsif @turns == 8 # after 9 turns, if no one has won leave the game (turns starts at 0, hence we check for 8)
         puts "EGALITE"
         break
       end
+      @turns += 1
     end
   end
 
   # asks the player to play and updates the board
   def play_turn
     puts "#{@players[@turns%2].name} c'est a ton tour de jouer :"
-    case_selected = gets.chomp
+    case_selected = ""
+    loop do
+      case_selected = gets.chomp.to_i
+      # makes sure the input is one of the cases that haven't been played already
+      if !@cases_remaining.include?(case_selected)
+        puts "Mais non ! Entre un chiffre (entre 1 et 9, et qui n'a pas encore été joué) :"
+      else
+        @cases_remaining.delete(case_selected)
+        break
+      end
+    end
     # fills the board with the player sign
     @board.board_spaces[case_selected.to_i - 1].state = @players[@turns%2].sign
-    #displays the board
+    # displays the board
     @board.display_board
   end
 
   # returns true if there is a winner
   def is_there_a_winner
-    return false if @turns < 5 # there can't be a winner before turn n°5
+    return false if @turns < 4 # there can't be a winner before turn n°5 (turns starts at 0, hence we check for 4)
 
     # checks each winning combination
     @board.winning_combinations.each do |combination|
       checked_spaces = []
       combination.each do |i|
+        # gets the value for this combination
         checked_spaces << @board.board_spaces[i-1].state
       end
       concat_spaces = checked_spaces.join
-      if concat_spaces !=~ /\d/
-        return true if concat_spaces == @players[0].sign * 3 || concat_spaces == @players[1].sign * 3
-      end
+      # returns true if the line tested does contain a unique character
+      return true if concat_spaces.chars.uniq.length == 1
     end
 
     return false
