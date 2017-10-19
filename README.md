@@ -38,5 +38,5 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
   - **Monday:** Ruby (File / JSON / CSV) / gem Google Drive
   - **Tuesday:** Ruby / gem Gmail
   - **Wednesday:** Ruby (Class, attributes, methods, and inheritance)
-  - **Thursday:**
-  - **Friday:**
+  - **Thursday:** Ruby (POO)
+  - **Friday:** 
