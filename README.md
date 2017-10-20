@@ -40,7 +40,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
   - **[Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_3/02_TUE):** Ruby / gem Gmail
   - **[Wednesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_3/03_WED):** Ruby (Class, attributes, methods, and inheritance)
   - **[Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_3/04_THU):** Ruby
-  - **[Friday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_3/05_FRI):** Ruby / Sinatra
+  - **[Friday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_3/05_FRI):** Ruby / Sinatra / Regex(todo)
 - **Week 4**
   - **Monday:** 
   - **Tuesday:** 
