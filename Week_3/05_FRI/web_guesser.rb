@@ -39,7 +39,7 @@ end
 the_web_guesser = WebGuesser.new
 
 get '/' do
-  if params["guess"].nil?
+  if params["guess"].nil? || !params["reset"].nil?
     the_web_guesser.reset
     erb :index, :locals => {:result => ["It's time for you to enter a value!", ""]}
   else
