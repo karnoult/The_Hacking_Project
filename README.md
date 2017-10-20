@@ -26,7 +26,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
 ### Cursus
 
 - **Week 1**
-  - **Wednesday:** HTML / CSS
+  - **[Wednesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_1/03_WED):** HTML / CSS
   - **Thursday:** HTML / CSS / JavaScript
   - **Friday:** HTML / CSS / jQuery
 - **Week 2**
