@@ -1,7 +1,6 @@
 class Player
 
-  attr_accessor :name
-  attr_accessor :sign
+  attr_accessor :name, :sign
 
   def initialize(_sign, _player_id)
     puts "Quel est ton nom joueur #{_player_id} ?"
@@ -13,9 +12,8 @@ end
 
 class BoardSpace
 
-  attr_accessor :id
-
-  attr_accessor :state # can be either an empty string or a reference to a player sign
+  attr_accessor :id # (1..9)
+  attr_accessor :state # can be either its id or a player sign if it has been selected by a player
 
   def initialize(_id)
     @id = _id
@@ -40,7 +38,7 @@ class Board
     @winning_combinations = [
       [1, 2, 3], [4, 5, 6], [7, 8, 9],
       [1, 4, 7], [2, 5, 8], [3, 6, 9],
-      [1, 5, 9], [3, 5, 7],
+      [1, 5, 9], [3, 5, 7]
     ]
   end
 
@@ -107,7 +105,7 @@ class Game
       end
     end
     # fills the board with the player sign
-    @board.board_spaces[case_selected.to_i - 1].state = @players[@turns%2].sign
+    @board.board_spaces[case_selected - 1].state = @players[@turns%2].sign
     # displays the board
     @board.display_board
   end
@@ -123,9 +121,8 @@ class Game
         # gets the value for this combination
         checked_spaces << @board.board_spaces[i-1].state
       end
-      concat_spaces = checked_spaces.join
       # returns true if the line tested does contain a unique character
-      return true if concat_spaces.chars.uniq.length == 1
+      return true if checked_spaces.uniq.length == 1
     end
 
     return false
