@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="<%= "/style.css"%>" />
+    <style>
+      mark {
+        background: none;
+      }
+
+      .too_high {
+        color: red;
+      }
+
+      .too_low {
+        color: blue;
+      }
+
+      .right_guess {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input type='text' name='guess' />
+      <input type='submit' value='Guess!' />
+    </form>
+    <p>
+      <%=
+      "As a reminder, here are you previous guess: #{result[1].join(', ')}<br />" + result[0]
+      %>
+    </p>
+    <form>
+      <input type='submit' value='Reset' />
+    </form>
+  </body>
+</html>
