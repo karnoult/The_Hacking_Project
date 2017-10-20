@@ -2,16 +2,60 @@
   <head>
     <link rel="stylesheet" href="<%= "/style.css"%>" />
     <style>
+      * {
+        font-family: arial, sans-serif;
+        color: white;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #039BE5;
+        padding-top: 15px;
+        width: 30%;
+        margin: auto;
+        border-radius: 10px;
+      }
+
       mark {
         background: none;
       }
 
+      p {
+        text-align: center;
+      }
+
+      input[type="text"] {
+        width: 100px;
+        height: 36px;
+        border: 1px solid #fff;
+        text-align: center;
+        color: black;
+      }
+
+      input[type="submit"] {
+        padding: 0px 16px ;
+        text-align: center;
+        height: 36px;
+        border: 1px solid #fff;
+        background-color: #f2f2f2;
+        color: #757575;
+        border-radius: 3px;
+      }
+
+      input[type="submit"]:hover {
+        box-shadow: 0 1px 1px 0 grey;
+        color: black;
+        border: 1px solid #c6c6c6;
+      }
+
       .too_high {
-        color: red;
+        color: #F25149;
       }
 
       .too_low {
-        color: blue;
+        color: #C2FBFF;
       }
 
       .right_guess {
@@ -20,17 +64,17 @@
     </style>
   </head>
   <body>
-    <form>
-      <input type='text' name='guess' />
-      <input type='submit' value='Guess!' />
-    </form>
-    <p>
-      <%=
-      "As a reminder, here are you previous guess: #{result[1].join(', ')}<br />" + result[0]
-      %>
-    </p>
-    <form>
-      <input type='submit' value='Reset' />
-    </form>
+    <div>
+      <form>
+        <input type='text' name='guess' />
+        <input type='submit' value='Guess!' />
+        <!--<input type='submit' value='Reset' />-->
+      </form>
+      <p>
+        <%=
+        "#{result[0]}<br /><br />#{result[1]}"
+        %>
+      </p>
+    </div>
   </body>
 </html>
