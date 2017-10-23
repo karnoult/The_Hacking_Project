@@ -20,6 +20,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
     - **Gmail**: https://github.com/gmailgem/gmail
   - Test Driven Development w/ **RSpec**: http://blog.teamtreehouse.com/an-introduction-to-rspec
   - Handling **errors**: http://blog.honeybadger.io/a-beginner-s-guide-to-exceptions-in-ruby/
+- **Rails**: https://www.railstutorial.org/book
 - **Sinatra**: http://www.sinatrarb.com/configuration.html
 - **Github** formatting: https://help.github.com/articles/basic-writing-and-formatting-syntax/
 
@@ -42,7 +43,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
   - **[Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_3/04_THU):** Ruby
   - **[Friday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_3/05_FRI):** Ruby / Sinatra / Regex(todo)
 - **Week 4**
-  - **Monday:** 
+  - **Monday:** Rails (intro)
   - **Tuesday:** 
   - **Wednesday:** 
   - **Thursday:** 
