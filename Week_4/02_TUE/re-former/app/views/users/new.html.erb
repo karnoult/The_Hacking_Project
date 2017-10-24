@@ -1,0 +1,29 @@
+<!-- Form à la mano
+
+<form action="/users" method="post" accept-charset="UTF-8">
+  <p>Username: <input type="text" name="username"></input></p>
+  <p>Email: <input type="text" name="email"></input></p>
+  <p>Bio: <input type="text" name="bio"></input></p>
+  <input type="submit" value="Create"></input>
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+</form>
+
+-->
+
+<!-- Form avec form_tag
+
+<%= form_tag('/users') do -%>
+  <p>Username: <%= text_field_tag 'username' %></p>
+  <p>Email: <%= text_field_tag 'email' %></p>
+  <p>Bio: <%= text_area_tag 'bio' %></p>
+  <p><%= submit_tag 'Add' %></p>
+<% end -%>
+
+-->
+
+<%= form_for(:user, url: '/users') do |f| %>
+  Username: <%= f.text_field :username %><br />
+  Email: <%= f.text_field :email %><br />
+  Bio: <%= f.text_area :bio %><br />
+  <%= f.submit %>
+<% end %>

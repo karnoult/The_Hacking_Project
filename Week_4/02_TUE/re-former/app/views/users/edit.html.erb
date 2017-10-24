@@ -1,0 +1,26 @@
+<!--
+<%= form_for(:user, url: {action: 'update'}, method: :patch) do |f| %>
+  Username: <%= f.text_field :username %><br />
+  Email: <%= f.text_field :email %><br />
+  Bio: <%= f.text_area :bio %><br />
+  <%= f.submit %>
+<% end %>
+-->
+
+<!--
+<form action="/users/<%= @user.id %>" accept-charset="UTF-8" method="post">
+  <input name="_method" value="patch" type="hidden">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  Username: <input value="<%= @user.username %>" name="user[username]" id="user_username" type="text"><br>
+  Email: <input value="<%= @user.email %>" name="user[email]" id="user_email" type="text"><br>
+  Bio: <textarea name="user[bio]" id="user_bio"><%= @user.bio %></textarea><br>
+  <input name="commit" value="Save User" type="submit">
+</form>
+-->
+
+<%= form_tag("/users/#{@user.id}") do -%>
+  <p>Username: <%= text_field_tag 'username', @user.username %></p>
+  <p>Email: <%= text_field_tag 'email' %></p>
+  <p>Bio: <%= text_area_tag 'bio' %></p>
+  <p><%= submit_tag 'Add' %></p>
+<% end -%>
