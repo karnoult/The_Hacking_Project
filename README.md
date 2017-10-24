@@ -24,7 +24,10 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
     - **Gmail**: https://github.com/gmailgem/gmail
   - Test Driven Development w/ **RSpec**: http://blog.teamtreehouse.com/an-introduction-to-rspec
   - Handling **errors**: http://blog.honeybadger.io/a-beginner-s-guide-to-exceptions-in-ruby/
-- **Rails**: https://www.railstutorial.org/book
+- **Rails**:
+  - **Reference**: http://api.rubyonrails.org/
+  - **Book**: https://www.railstutorial.org/book
+  - **Guides**: http://guides.rubyonrails.org/index.html
 - **Sinatra**: http://www.sinatrarb.com/configuration.html
 - **Github** formatting: https://help.github.com/articles/basic-writing-and-formatting-syntax/
 
