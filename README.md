@@ -7,7 +7,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
 - **HTML**: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference
 - **CSS**:
   - **Reference**: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
-  - **Frameworks**:
+  - **Frameworks**
     - **Bootstrap**: http://getbootstrap.com/
     - **Tacit**: https://github.com/yegor256/tacit
 - **Ruby**
