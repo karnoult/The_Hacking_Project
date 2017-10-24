@@ -1,1 +1,8 @@
-Bienvenue sur ma super app de listing de films !!
+<h2>Bienvenue sur ma super app de listing de films !!</h2>
+
+<% @movies.each do |movie| %>
+  <div>
+    <span><strong>Film n°<%= movie.id %></strong><span>
+    <span>- <%= movie.title + " (" + movie.release_year.to_s + ")" %><span>
+  </div>
+<% end %>
