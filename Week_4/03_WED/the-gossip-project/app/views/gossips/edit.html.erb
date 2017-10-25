@@ -4,5 +4,5 @@
   <%= f.submit %>
 <% end %>
 
-<%= link_to 'Supprimer le gossip', @gossip, method: :delete %>
+<%= button_to 'Supprimer le gossip', @gossip, method: :delete, data: { confirm: "Are you sure?" } %>
 <%= link_to 'Retour', root_path %>
