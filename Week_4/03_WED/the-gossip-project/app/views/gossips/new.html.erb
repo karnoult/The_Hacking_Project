@@ -1,0 +1,6 @@
+<%= form_for(:gossip, url: '/gossips') do |f| %>
+  Auteur : <%= f.text_field :anonymous_author %><br />
+  Contenu : <%= f.text_area :content %><br />
+  <%= f.submit %>
+<% end %>
+<%= link_to 'Retour', root_path %>

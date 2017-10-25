@@ -1,0 +1,9 @@
+<% @gossips.each do |gossip| %>
+  <div>
+  <%= link_to gossip.anonymous_author + " - " + gossip.content, gossip_path(gossip) %>
+  <%= link_to 'Editer le gossip', edit_gossip_path(gossip) %> -
+  <%= link_to 'Supprimer le gossip', gossip, method: :delete %>
+  </div>
+<% end %>
+
+<%= link_to 'Ajouter un gossip', new_gossip_path %>
