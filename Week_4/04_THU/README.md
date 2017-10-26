@@ -16,7 +16,7 @@
   - has_many **pins**
   - has_many **commentaires**
 - Pin
-  - **url_image**: string
+  - **url_image**: string \[present\]
   - **utilisateur_id**: integer \[present\]
   - has_many **commentaires**
 - Commentaire
