@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171026130859) do
+ActiveRecord::Schema.define(version: 20171026134914) do
+
+  create_table "commentaires", force: :cascade do |t|
+    t.text "contenu"
+    t.integer "pin_id"
+    t.integer "utilisateur_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["pin_id"], name: "index_commentaires_on_pin_id"
+    t.index ["utilisateur_id"], name: "index_commentaires_on_utilisateur_id"
+  end
 
   create_table "cours", force: :cascade do |t|
     t.string "titre"
@@ -28,6 +38,21 @@ ActiveRecord::Schema.define(version: 20171026130859) do
     t.datetime "updated_at", null: false
     t.index ["cour_id"], name: "index_lecons_on_cour_id"
     t.index ["titre"], name: "index_lecons_on_titre", unique: true
+  end
+
+  create_table "pins", force: :cascade do |t|
+    t.string "url_image"
+    t.integer "utilisateur_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["utilisateur_id"], name: "index_pins_on_utilisateur_id"
+  end
+
+  create_table "utilisateurs", force: :cascade do |t|
+    t.string "nom"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["nom"], name: "index_utilisateurs_on_nom", unique: true
   end
 
 end
