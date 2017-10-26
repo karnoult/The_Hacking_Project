@@ -12,7 +12,7 @@
 ## The Hacking Pinterest
 
 - Utilisateur
-  - **nom**: string \[unique, 4-15 chars, present\]
+  - **nom**: string \[unique, 1-15 chars, present\]
   - has_many **pins**
   - has_many **commentaires**
 - Pin
@@ -27,7 +27,7 @@
 ## The Hacking News
 
 - Utilisateur
-  - **nom**: string \[unique, 4-15 chars, present\]
+  - **nom**: string \[unique, 1-15 chars, present\]
   - has_many **liens**
   - has_many **commentaires**
 - Lien
