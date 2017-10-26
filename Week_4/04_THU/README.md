@@ -7,19 +7,46 @@
 - Lecon
   - **titre**: string \[unique, 4-50 chars, present\]
   - **contenu**: text \[present\]
-  - **cours_id**:integer \[present\]
+  - **cours_id**: integer \[present\]
   
 ## The Hacking Pinterest
 
 - Utilisateur
-  - **username**: string \[unique, 4-15 chars, present\]
+  - **nom**: string \[unique, 4-15 chars, present\]
   - has_many **pins**
   - has_many **commentaires**
 - Pin
   - **url_image**: string
+  - **utilisateur_id**: integer \[present\]
+  - has_many **commentaires**
+- Commentaire
+  - **contenu**: text \[present\]
+  - **pin_id**: integer \[present\]
+  - **utilisateur_id**: integer \[present\]
+
+## The Hacking News
+
+- Utilisateur
+  - **nom**: string \[unique, 4-15 chars, present\]
+  - has_many **liens**
+  - has_many **commentaires**
+- Lien
+  - **url**: string
   - **utilisateur_id**:integer \[present\]
   - has_many **commentaires**
 - Commentaire
   - **contenu**: text \[present\]
-  - **pin_id**:integer \[present\]
-  - **utilisateur_id**:integer \[present\]
+  - **utilisateur_id**: integer \[present\]
+  - **lien_id**: integer \[present\]
+  - **commentaire_id**: integer
+  - has_many **commentaires**
+
+## The Hacking Class
+
+- Eleve
+  - **nom**: string \[present\]
+  - **cours_id**: integer \[present\]
+- Cours
+  - **titre**: string \[unique, 4-50 chars, present\]
+  - **description**: text \[4-1000 chars, present\]
+  - has_many **eleves**
