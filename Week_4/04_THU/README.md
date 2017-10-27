@@ -1,10 +1,10 @@
-# Moussaillons / Gossips / Commentaires
+## Moussaillons / Gossips / Commentaires
 
 https://github.com/karnoult/THP_CRUD_Addict
 
-# MVC
+## MVC
 
-## MOOCademy
+### MOOCademy
 
 - Cours
   - **titre**: string \[unique, 4-50 chars, present\]
@@ -15,7 +15,7 @@ https://github.com/karnoult/THP_CRUD_Addict
   - **contenu**: text \[present\]
   - **cours_id**: integer \[present\]
   
-## The Hacking Pinterest
+### The Hacking Pinterest
 
 - Utilisateur
   - **nom**: string \[unique, 1-15 chars, present\]
@@ -30,7 +30,7 @@ https://github.com/karnoult/THP_CRUD_Addict
   - **pin_id**: integer \[present\]
   - **utilisateur_id**: integer \[present\]
 
-## The Hacking News
+### The Hacking News
 
 - Utilisateur
   - **nom**: string \[unique, 1-15 chars, present\]
@@ -47,7 +47,7 @@ https://github.com/karnoult/THP_CRUD_Addict
   - **commentaire_id**: integer
   - has_many **commentaires**
 
-## The Hacking Class
+### The Hacking Class
 
 - Eleve
   - **nom**: string \[present\]
