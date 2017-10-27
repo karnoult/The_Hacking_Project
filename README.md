@@ -48,10 +48,10 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
   - **[Friday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_3/05_FRI):** Ruby / Sinatra / Regex(todo)
 - **Week 4**
   - **Monday:** Rails (intro)
-  - **[Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_2/01_MON):** Rails
-  - **Wednesday:** 
-  - **Thursday:** 
-  - **Friday:** 
+  - **[Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_2/01_MON):** Rails (MVC/CRUD)
+  - **Wednesday:** Rails (MVC/CRUD)
+  - **[Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_4/04_THU):** Rails (MVC/CRUD)
+  - **Friday:** Rails (MVC/CRUD)
 - **Week 5**
   - **Monday:** 
   - **Tuesday:** 
