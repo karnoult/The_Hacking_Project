@@ -1,24 +1,54 @@
-# README
+## MVC
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### MOOCademy
 
-Things you may want to cover:
+- Cours
+  - **titre**: string \[unique, 4-50 chars, present\]
+  - **description**: text \[4-1000 chars, present\]
+  - has_many **lecons**
+- Lecon
+  - **titre**: string \[unique, 4-50 chars, present\]
+  - **contenu**: text \[present\]
+  - **cours_id**: integer \[present\]
 
-* Ruby version
+### The Hacking Pinterest
 
-* System dependencies
+- Utilisateur
+  - **nom**: string \[unique, 1-15 chars, present\]
+  - has_many **pins**
+  - has_many **commentaires**
+- Pin
+  - **url_image**: string \[present\]
+  - **utilisateur_id**: integer \[present\]
+  - has_many **commentaires**
+- Commentaire
+  - **contenu**: text \[present\]
+  - **pin_id**: integer \[present\]
+  - **utilisateur_id**: integer \[present\]
 
-* Configuration
+### The Hacking News
 
-* Database creation
+- Utilisateur
+  - **nom**: string \[unique, 1-15 chars, present\]
+  - has_many **liens**
+  - has_many **commentaires**
+- Lien
+  - **url**: string
+  - **utilisateur_id**:integer \[present\]
+  - has_many **commentaires**
+- Commentaire
+  - **contenu**: text \[present\]
+  - **utilisateur_id**: integer \[present\]
+  - **lien_id**: integer \[present\]
+  - **commentaire_id**: integer
+  - has_many **commentaires**
 
-* Database initialization
+### The Hacking Class
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Eleve
+  - **nom**: string \[present\]
+  - **cours_id**: integer \[present\]
+- Cours
+  - **titre**: string \[unique, 4-50 chars, present\]
+  - **description**: text \[4-1000 chars, present\]
+  - has_many **eleves**
