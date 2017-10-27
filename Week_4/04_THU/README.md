@@ -1,5 +1,3 @@
-(done with @aflex)
-
 ## MOOCademy
 
 - Cours
