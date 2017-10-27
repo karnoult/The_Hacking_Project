@@ -5,13 +5,13 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
 ### Docs
 
 - **HTML**:
-  - **Reference**: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference
-  - **Flexbox**: https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/la-mise-en-page-avec-flexbox
+  - **[Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference)**
+  - **[Flexbox](https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/la-mise-en-page-avec-flexbox)**
 - **CSS**:
-  - **Reference**: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+  - **[Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference**
   - **Frameworks**
-    - **Bootstrap**: http://getbootstrap.com/
-    - **Tacit**: https://github.com/yegor256/tacit
+    - **[Bootstrap](http://getbootstrap.com/)**
+    - **[Tacit](https://github.com/yegor256/tacit)**
 - **Ruby**
   - **Core**: http://ruby-doc.org/core-2.4.2/
   - **Style guide**: https://github.com/bbatsov/ruby-style-guide
