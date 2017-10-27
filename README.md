@@ -16,11 +16,9 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
   - **[Core]**: http://ruby-doc.org/core-2.4.2/
   - **[Style guide]**: https://github.com/bbatsov/ruby-style-guide
   - **Gems**
-    - **[Pry]** (runtime dev console): https://github.com/pry/pry/wiki
-    - **[Nokogiri]** (HTML parser w/ CSS and XPATH): http://www.rubydoc.info/github/sparklemotion/nokogiri
-    - **Watir** (web app testing)
-      - http://www.rubydoc.info/gems/watir/
-      - http://watir.com/guides/
+    - **[Pry](https://github.com/pry/pry/wiki)** (runtime dev console)
+    - **[Nokogiri](http://www.rubydoc.info/github/sparklemotion/nokogiri)** (HTML parser w/ CSS and XPATH)
+    - **[Watir](http://watir.com/guides/)** (web app testing)
     - **[Twitter](http://www.rubydoc.info/gems/twitter)**
     - **[Google Drive](https://github.com/gimite/google-drive-ruby)** (read/write Google Drive files/spreadsheets)
     - **[Gmail](https://github.com/gmailgem/gmail)**
