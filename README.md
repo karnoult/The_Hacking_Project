@@ -4,33 +4,33 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
 
 ### Docs
 
-- **HTML**:
-  - **[Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference)**
-  - **[Flexbox](https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/la-mise-en-page-avec-flexbox)**
-- **CSS**:
-  - **[Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)**
-  - **Frameworks**
-    - **[Bootstrap](http://getbootstrap.com/)**
-    - **[Tacit](https://github.com/yegor256/tacit)**
-- **Ruby**
-  - **[Core](http://ruby-doc.org/core-2.4.2/)**
-  - **[Style guide](https://github.com/bbatsov/ruby-style-guide)**
-  - **Gems**
-    - **[Pry](https://github.com/pry/pry/wiki)** (runtime dev console)
-    - **[Nokogiri](http://www.rubydoc.info/github/sparklemotion/nokogiri)** (HTML parser w/ CSS and XPATH)
-    - **[Watir](http://watir.com/guides/)** (web app testing)
-    - **[Twitter](http://www.rubydoc.info/gems/twitter)**
-    - **[Google Drive](https://github.com/gimite/google-drive-ruby)** (read/write Google Drive files/spreadsheets)
-    - **[Gmail](https://github.com/gmailgem/gmail)**
-  - Test Driven Development w/ **[RSpec](http://blog.teamtreehouse.com/an-introduction-to-rspec)**
-  - Handling **[errors](http://blog.honeybadger.io/a-beginner-s-guide-to-exceptions-in-ruby/)**
-- **Rails**:
-  - **[Reference](http://api.rubyonrails.org/)**
-  - **[Book](https://www.railstutorial.org/book)**
-  - **[Guides](http://guides.rubyonrails.org/index.html)**
-- **[Sinatra](http://www.sinatrarb.com/configuration.html)**
-- **[Github](https://help.github.com/articles/basic-writing-and-formatting-syntax/)** formatting
-- **[Heroku](https://www.theodinproject.com/courses/ruby-on-rails/lessons/deployment)**
+- HTML:
+  - [Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference)
+  - [Flexbox](https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/la-mise-en-page-avec-flexbox)
+- CSS:
+  - [Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+  - Frameworks
+    - [Bootstrap](http://getbootstrap.com/)
+    - [Tacit](https://github.com/yegor256/tacit)
+- Ruby
+  - [Core](http://ruby-doc.org/core-2.4.2/)
+  - [Style guide](https://github.com/bbatsov/ruby-style-guide)
+  - Gems
+    - [Pry](https://github.com/pry/pry/wiki) (runtime dev console)
+    - [Nokogiri](http://www.rubydoc.info/github/sparklemotion/nokogiri) (HTML parser w/ CSS and XPATH)
+    - [Watir](http://watir.com/guides/) (web app testing)
+    - [Twitter](http://www.rubydoc.info/gems/twitter)
+    - [Google Drive](https://github.com/gimite/google-drive-ruby) (read/write Google Drive files/spreadsheets)
+    - [Gmail](https://github.com/gmailgem/gmail)
+  - Test Driven Development w/ [RSpec](http://blog.teamtreehouse.com/an-introduction-to-rspec)
+  - Handling [errors](http://blog.honeybadger.io/a-beginner-s-guide-to-exceptions-in-ruby/)
+- Rails:
+  - [Reference](http://api.rubyonrails.org/)
+  - [Book](https://www.railstutorial.org/book)
+  - [Guides](http://guides.rubyonrails.org/index.html)
+- [Sinatra](http://www.sinatrarb.com/configuration.html)
+- [Github](https://help.github.com/articles/basic-writing-and-formatting-syntax/) formatting
+- [Heroku](https://www.theodinproject.com/courses/ruby-on-rails/lessons/deployment)
 
 ### Cursus
 
