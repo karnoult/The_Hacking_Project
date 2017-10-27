@@ -4,8 +4,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
 
 ### Docs
 
-- **HTML**
-  - [Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference)
+- **HTML** - [Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference)
   - [Flexbox](https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/la-mise-en-page-avec-flexbox)
 - **CSS**
   - [Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
