@@ -1,5 +1,3 @@
-## MVC
-
 ### MOOCademy
 
 - Cours
