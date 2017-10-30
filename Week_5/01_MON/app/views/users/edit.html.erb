@@ -1,0 +1,8 @@
+<h1>Users#edit</h1>
+
+<%= form_for :user, url: user_path, method: :patch do |f| %>
+  Email: <%= f.text_field :email %><br />
+  Password: <%= f.text_field :password %><br />
+  Password confirmation: <%= f.text_field :password_confirmation %><br />
+  <%= f.submit %>
+<% end %>
