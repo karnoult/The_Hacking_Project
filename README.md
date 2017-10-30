@@ -50,11 +50,11 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
 - **Week 4**
   - **Monday:** Rails (intro)
   - **[Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_2/01_MON):** Rails (MVC/CRUD)
-  - **Wednesday:** Rails (MVC/CRUD)
+  - **Wednesday:** Rails (MVC / CRUD)
   - **[Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_4/04_THU):** Rails (MVC/CRUD)
-  - **Friday:** Rails (MVC/CRUD)
+  - **Friday:** Rails (MVC / CRUD)
 - **Week 5**
-  - **Monday:** 
+  - **Monday:**  Rails (authentication / flash)
   - **Tuesday:** 
   - **Wednesday:** 
   - **Thursday:** 
