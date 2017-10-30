@@ -1,0 +1,6 @@
+<h1>Welcome
+  <%= current_user.email if logged_in? %>
+</h1>
+<% if logged_in? %>
+  <p><a href='<%= secret_page_path %>'>Follow the rabbit!</a></p>
+<% end %>
