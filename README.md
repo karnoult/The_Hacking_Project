@@ -25,7 +25,8 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
   - [Book](https://www.railstutorial.org/book)
   - [Guides](http://guides.rubyonrails.org/index.html)
 - **[Sinatra](http://www.sinatrarb.com/configuration.html)**
-- **[Github](https://help.github.com/articles/basic-writing-and-formatting-syntax/)** formatting
+- **[Git](https://git-scm.com/docs)**
+  - [Github formatting](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - **[Heroku](https://www.theodinproject.com/courses/ruby-on-rails/lessons/deployment)**
 
 ### Cursus
