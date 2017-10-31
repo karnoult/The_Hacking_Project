@@ -1,6 +1,7 @@
 <h1>Users#edit</h1>
 
-<%= form_for :user, url: user_path, method: :patch do |f| %>
+<%= form_for @user, method: :patch do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
   Email: <%= f.email_field :email %><br />
   Password: <%= f.password_field :password %><br />
   Password confirmation: <%= f.password_field :password_confirmation %><br />

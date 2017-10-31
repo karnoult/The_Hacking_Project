@@ -1,7 +1,8 @@
 <h1>Users#new</h1>
 <p>Find me in app/views/users/new.html.erb</p>
 
-<%= form_for :user, url: users_path do |f| %>
+<%= form_for @user do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
   Email: <%= f.email_field :email %><br />
   Password: <%= f.password_field :password %><br />
   Password confirmation: <%= f.password_field :password_confirmation %><br />
