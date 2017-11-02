@@ -19,3 +19,10 @@ c = Category.create(name:"coco")
 v = Video.create(name:"vovo", category:c, user:u)
 u.categories << c
 
+user1 = Twitter.create(name:"user1")
+user2 = Twitter.create(name:"user2")
+tweet1 = Tweet.create(content:"twetwe", author:user1)
+tweet1.likers << user2
+msg1 = Message.create(content:"toto", sender:user1)
+msg1.recipients << user2
+user1.followers << user2
