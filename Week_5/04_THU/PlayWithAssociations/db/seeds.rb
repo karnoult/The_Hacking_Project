@@ -9,3 +9,13 @@
 d = Doctor.create(first_name: "toto", last_name: "toto", specialty: "toto", postal_code: 75011)
 p = Patient.create(first_name: "coco", last_name: "coco")
 Appointment.create(date: DateTime.now, doctor: d, patient: p)
+
+a = Assembly.create(name: "toto")
+p = Part.create(part_number: 1234)
+a.parts << p
+
+u = User.create(name:"uouo")
+c = Category.create(name:"coco")
+v = Video.create(name:"vovo", category:c, user:u)
+u.categories << c
+
