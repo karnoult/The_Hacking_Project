@@ -5,16 +5,20 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new
-    @user.name = params_user(:name)
+    @user.name = params_user[:name]
     if @user.save
-      redirect_to root_path
+      redirect_to users_path
     else
       render 'new'
     end
   end
 
-  def show
+  def index
     @users = User.all
+  end
+
+  def show
+    @user = User.find(params[:id])
   end
 
   private

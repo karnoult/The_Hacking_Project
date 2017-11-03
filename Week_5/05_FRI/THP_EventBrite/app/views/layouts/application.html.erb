@@ -9,6 +9,9 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render "layouts/header" %>
+    <div class="container" style="padding-top: 5rem;">
+      <%= yield %>
+    </div>
   </body>
 </html>

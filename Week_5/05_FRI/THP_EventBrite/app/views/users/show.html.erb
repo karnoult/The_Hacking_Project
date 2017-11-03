@@ -1,21 +1,3 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<%= @user.name %>
 
-<table>
-  <thead>
-    <tr>
-      <td>Name</td>
-      <td>Created events</td>
-      <td>Participated events</td>
-    </tr>
-  </thead>
-<% @users.each do |user| %>
-  <tr>
-    <td><%= user.name %></td>
-    <td><%= user.created_events.count %></td>
-    <td><%= user.participated_events.count %></td>
-  </tr>
-<% end %>
-</table>
-
-<%= link_to 'new', users_new_path %>
+<%= link_to 'back' %>

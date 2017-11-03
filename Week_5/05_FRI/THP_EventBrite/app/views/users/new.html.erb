@@ -1,9 +1,10 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
-
-<%= form_for @user, url: users_new_path do |f| %>
-  <%= f.text_field :name %>
-  <%= f.submit 'new' %>
+<%= form_for @user do |f| %>
+  <div class="form-group">
+    <%= f.text_field :name, placeholder: "name", class:'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.submit 'new', class:'btn btn-default' %>
+  </div>
 <% end %>
 
-<%= link_to 'back', users_show_path %>
+<%= link_to 'back', users_path %>

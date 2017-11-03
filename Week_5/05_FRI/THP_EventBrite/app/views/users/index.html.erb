@@ -1,0 +1,20 @@
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <td>ID</td>
+      <td>Name</td>
+      <td>Created events</td>
+      <td>Participated events</td>
+    </tr>
+  </thead>
+<% @users.each do |user| %>
+  <tr>
+    <td><%= link_to user.id, user_path(user.id) %></td>
+    <td><%= user.name %></td>
+    <td><%= user.created_events.count %></td>
+    <td><%= user.participated_events.count %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'new', new_user_path %>

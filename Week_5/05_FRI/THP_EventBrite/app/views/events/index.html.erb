@@ -1,0 +1,20 @@
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <td>ID</td>
+      <td>Description</td>
+      <td>Place</td>
+      <td>Creator</td>
+    </tr>
+  </thead>
+<% @events.each do |event| %>
+  <tr>
+    <td><%= link_to event.id, event_path(event.id) %></td>
+    <td><%= event.desc %></td>
+    <td><%= event.place %></td>
+    <td><%= event.creator.name %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'new', new_event_path %>
