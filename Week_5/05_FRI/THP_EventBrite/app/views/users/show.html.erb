@@ -1,3 +1,16 @@
-<%= @user.name %>
 
-<%= link_to 'back' %>
+<h1><%= @user.name %></h1>
+
+<h4>Evènements crées</h4>
+<ul class="list-group">
+<% @user.created_events.each do |event| %>
+  <li class="list-group-item">
+    <%= "##{event.id} - #{event.desc}" %>
+    <%= link_to '(see more)', event_path(event.id) %>
+    </li>
+<% end %>
+</ul>
+
+<p>
+<%= button_to 'back', users_path, method: :get, class:'btn btn-default' %>
+</p>

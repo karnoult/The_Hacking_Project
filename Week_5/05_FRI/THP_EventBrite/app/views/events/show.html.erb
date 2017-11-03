@@ -1,3 +1,11 @@
-<%= @event.desc %>
 
-<%= link_to 'back', events_path %>
+<h1>Event <%= @event.desc %></h1>
+<p>
+  Place: <%= @event.place %><br />
+  Date: <%= @event.date %><br />
+  Created by: <%= link_to @event.creator.name, user_path(@event.creator.id) %>
+</p>
+
+<p>
+<%= button_to 'back', users_path, method: :get, class:'btn btn-default' %>
+</p>
