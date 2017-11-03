@@ -1,15 +1,12 @@
 <%= form_for @event do |f| %>
   <div class="form-group">
-    <%= f.text_area :desc, class:'form-control' %>
+    <%= f.text_area :desc, placeholder: 'description', class:'form-control' %>
   </div>
   <div class="form-group">
-    <%= f.text_field :place, class:'form-control' %>
+    <%= f.text_field :place, placeholder: 'location', class:'form-control' %>
   </div>
   <div class="form-group">
     <%= f.date_field :date, class:'form-control' %>
-  </div>
-  <div class="form-group">
-    <%= f.collection_select(:creator_id, User.all, :id, :name) %>
   </div>
   <div class="form-group">
     <%= f.submit 'new', class:'btn btn-default' %>

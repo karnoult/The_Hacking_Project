@@ -8,7 +8,7 @@ class EventsController < ApplicationController
     @event.desc = params_event[:desc]
     @event.place = params_event[:place]
     @event.date = params_event[:date]
-    @event.creator = User.find(params_event[:creator_id])
+    @event.creator = current_user
 
     if @event.save
       redirect_to events_path
