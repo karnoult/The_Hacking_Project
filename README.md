@@ -57,7 +57,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
   - **Monday:**  Rails (authentication)
   - **[Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_5/02_TUE):** Rails (authentication)
   - **Thursday:** Rails (associations)
-  - **Friday:** 
+  - **[Friday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_5/02_FRI):** Rails (associations)
 - **Week 6**
   - **Monday:** 
   - **Tuesday:** 
