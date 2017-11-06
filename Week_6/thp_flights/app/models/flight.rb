@@ -7,7 +7,13 @@ class Flight < ApplicationRecord
   validates :departure_airport, presence: true
   validates :arrival_airport, presence: true
 
-  def self.search(params)
-    where('departure_airport_id = ? and arrival_airport_id = ?', params[:departure_airport_id], params[:arrival_airport_id])
+  def self.search(from, to)
+    if from > 0 && to > 0
+      where('departure_airport_id = ? and arrival_airport_id = ?', from, to)
+    elsif from > 0
+      where('departure_airport_id = ?', from)
+    elsif to > 0
+      where('arrival_airport_id = ?', to)
+    end
   end
 end

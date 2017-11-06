@@ -2,13 +2,13 @@
 <p>Find me in app/views/flights/index.html.erb</p>
 
 <%= form_tag root_path, method: :get do %>
-  <p>From: <%= collection_select(:airport, :departure_airport_id, @airports, :id, :airport_code) %>
-  <p>To: <%= collection_select(:airport, :arrival_airport_id, @airports, :id, :airport_code) %></p>
+  <p>From: <%= collection_select(:airport, :departure_airport_id, @airports, :id, :airport_code, prompt: true) %>
+  <p>To: <%= collection_select(:airport, :arrival_airport_id, @airports, :id, :airport_code, prompt: true) %></p>
   <p><%= submit_tag 'Search' %></p>
 <% end %>
 
 <% if @flights %>
-<p>List of flights from <%= @departure_airport_code %> to <%= @arrival_airport_code %></p>
+<p>List of flights <%= "from " + @departure_airport_code + " " if @departure_airport_code %><%= "to " + @arrival_airport_code if @arrival_airport_code %></p>
 <table>
   <thead>
     <tr>
