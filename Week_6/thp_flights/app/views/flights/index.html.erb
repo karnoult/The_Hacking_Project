@@ -1,30 +1,41 @@
 <h1>Flights#index</h1>
 <p>Find me in app/views/flights/index.html.erb</p>
 
-<%= form_tag root_path, method: :get do -%>
-  <p>From: <%= collection_select(:airport, :departure_airport_id, Airport.all, :id, :airport_code) %>
-  <p>To: <%= collection_select(:airport, :arrival_airport_id, Airport.all, :id, :airport_code) %></p>
+<%= form_tag root_path, method: :get do %>
+  <p>From: <%= collection_select(:airport, :departure_airport_id, @airports, :id, :airport_code) %>
+  <p>To: <%= collection_select(:airport, :arrival_airport_id, @airports, :id, :airport_code) %></p>
   <p><%= submit_tag 'Search' %></p>
-<% end -%>
+<% end %>
 
 <% if @flights %>
+<p>List of flights from <%= @departure_airport_code %> to <%= @arrival_airport_code %></p>
 <table>
-  <% @flights.each_with_index do |flight, index| %>
+  <thead>
+    <tr>
+      <th>departure</th>
+      <th>from</th>
+      <th>to</th>
+      <th>duration</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @flights.each do |flight| %>
     <tr>
       <td>
-        <%= index %>
+        <%= flight.departure_date.to_formatted_s(:short) %>
       </td>
       <td>
         <%= flight.departure_airport.airport_code %>
       </td>
       <td>
-        ->
+        <%= flight.arrival_airport.airport_code %>
       </td>
       <td>
-        <%= flight.arrival_airport.airport_code %>
+        <%= "#{flight.duration} min" %>
       </td>
     </tr>
   <% end %>
+  </tbody>
 </table>
 <% else %>
 <p>Make a search to display flights!</p>
