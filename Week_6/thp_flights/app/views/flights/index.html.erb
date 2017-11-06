@@ -1,0 +1,27 @@
+<h1>Flights#index</h1>
+<p>Find me in app/views/flights/index.html.erb</p>
+
+<%= form_tag root_path, method: :get do -%>
+  <p>From: <%= collection_select(:airport, :departure_airport_id, Airport.all, :id, :airport_code) %>
+  <p>To: <%= collection_select(:airport, :arrival_airport_id, Airport.all, :id, :airport_code) %></p>
+  <p><%= submit_tag 'Search' %></p>
+<% end -%>
+
+<table>
+  <% @flights.each_with_index do |flight, index| %>
+    <tr>
+      <td>
+        <%= index %>
+      </td>
+      <td>
+        <%= flight.departure_airport.airport_code %>
+      </td>
+      <td>
+        ->
+      </td>
+      <td>
+        <%= flight.arrival_airport.airport_code %>
+      </td>
+    </tr>
+  <% end %>
+</table>
