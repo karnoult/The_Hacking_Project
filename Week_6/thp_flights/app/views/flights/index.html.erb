@@ -7,6 +7,7 @@
   <p><%= submit_tag 'Search' %></p>
 <% end -%>
 
+<% if @flights %>
 <table>
   <% @flights.each_with_index do |flight, index| %>
     <tr>
@@ -25,3 +26,6 @@
     </tr>
   <% end %>
 </table>
+<% else %>
+<p>Make a search to display flights!</p>
+<% end %>
