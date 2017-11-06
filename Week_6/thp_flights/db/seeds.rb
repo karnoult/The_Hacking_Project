@@ -6,6 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Airport.destroy_all
+Flight.destroy_all
+
 airports = [
   {airport_code: "CDG"},
   {airport_code: "ORL"},
@@ -20,15 +23,14 @@ airports = [
 
 Airport.create(airports)
 
-random = Random.new
-time_now = Time.now.to_i
+all_airports = Airport.all
+nb_airports = airports.size
 
 1000.times do |n|
   Flight.create(
-    duration: random.rand(600),
-    # 2592000 = 60*60*24*30 = 30 jours en secondes
-    departure_date: Time.at(time_now + Random.new.rand(2592000)),
-    departure_airport: Airport.find(random.rand(airports.size - 1) + 1),
-    arrival_airport: Airport.find(random.rand(airports.size - 1) + 1)
+    duration: rand(30..600),
+    departure_date: rand(7.days).seconds.from_now,
+    departure_airport: all_airports[rand(1..nb_airports) - 1],
+    arrival_airport: all_airports[rand(1..nb_airports) - 1]
   )
 end
