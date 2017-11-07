@@ -1,1 +1,8 @@
-<h1>Gossips</h1>
+<% @gossips.each_with_index do |gossip, index| %>
+  <div>
+    Gossip n°<%= index %><br />
+    <em>(created on <%= gossip.creation_datetime.strftime("%d %b %Y") %> by <%= gossip.creator.username %>)</em><br />
+    <%= gossip.content %>
+  </div>
+  <p>---------</p>
+<% end %>
