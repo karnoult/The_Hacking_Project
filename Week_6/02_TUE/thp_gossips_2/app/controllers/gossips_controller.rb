@@ -11,8 +11,8 @@ class GossipsController < ApplicationController
   def create
     @gossip = Gossip.new
     @gossip.content = params_gossip[:content]
-    @gossip.creator_id = User.find(params_gossip[:creator_id])
-    @gossip.creation_datetime = params_gossip[:creation_datetime]
+    @gossip.creator = current_user
+    @gossip.creation_datetime = Time.zone.now
 
     if @gossip.save
       redirect_to root_path
@@ -36,7 +36,7 @@ class GossipsController < ApplicationController
   private
 
   def params_gossip
-    params.require(:gossip).permit(:content, :creator_id, :creation_datetime)
+    params.require(:gossip).permit(:content)
   end
 
 end
