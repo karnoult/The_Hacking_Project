@@ -3,7 +3,7 @@ class CreateGossips < ActiveRecord::Migration[5.1]
     create_table :gossips do |t|
       t.text :content
       t.datetime :creation_datetime
-      t.references :creator, foreign_key: true
+      t.references :creator, foreign_key: {to_table: :users}
 
       t.timestamps
     end
