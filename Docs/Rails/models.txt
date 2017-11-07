@@ -1,0 +1,7 @@
+rails g model Lecon titre:string:uniq contenu:text cour:references
+
+-----------------------------------------------------------------------------
+
+validates :email, presence: true, uniqueness: { case_sensitive: false }
+
+
