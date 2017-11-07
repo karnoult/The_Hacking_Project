@@ -1,0 +1,2 @@
+class GossipsController < ApplicationController
+end
