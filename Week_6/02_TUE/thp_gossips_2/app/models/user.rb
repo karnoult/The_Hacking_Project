@@ -5,4 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :gossips, foreign_key: 'creator_id'
+
+  validates :username, presence: true, uniqueness: true, length: { in: 3..10 }
 end
