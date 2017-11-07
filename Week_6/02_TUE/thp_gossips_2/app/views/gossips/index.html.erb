@@ -8,14 +8,16 @@
       <% if user_signed_in? %>
         <%= gossip.creator.username %>
       <% else %>
-        <em title="sign in to see">undisclosed</em>
+        <em title="sign in to see">hidden</em>
       <% end %>
       )<br />
       --->
-      <%= gossip.content %>
       <% if user_signed_in? %>
+        <%= gossip.content %>
         <br />
         <%= link_to "edit", edit_gossip_path(gossip), class: "badge badge-info" %> <%= link_to "delete", gossip_path(gossip), method: :delete, class: "badge badge-danger", data: { confirm: "T'es sûr de toi ?" } %>
+      <% else %>
+        <em title="sign in to see">hidden</em>
       <% end %>
     </div>
     <p>------------------------------------</p>
