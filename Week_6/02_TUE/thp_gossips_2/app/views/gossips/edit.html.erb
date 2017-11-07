@@ -1,0 +1,10 @@
+<%= form_for @gossip do |f| %>
+  <div class="form-group">
+    <%= f.text_field :content, class:'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.submit "save", class:'btn btn-default' %>
+  </div>
+<% end %>
+
+<%= button_to "back", root_path, method: :get, class:'btn btn-default' %>

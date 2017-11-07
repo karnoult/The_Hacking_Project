@@ -27,10 +27,16 @@ class GossipsController < ApplicationController
 
   def update
     @gossip = Gossip.find(params[:id])
+    if @gossip.update(content: params_gossip[:content])
+      redirect_to root_path
+    else
+      render 'edit'
+    end
   end
 
   def destroy
-    @gossip = Gossip.find(params[:id])
+    Gossip.find(params[:id]).destroy
+    redirect_to root_path
   end
 
   private
