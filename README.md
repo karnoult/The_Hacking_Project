@@ -24,10 +24,13 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
 - **[Rails](http://api.rubyonrails.org/)**
   - [Book](https://www.railstutorial.org/book)
   - [Guides](http://guides.rubyonrails.org/index.html)
+  - Gems
+    - [Devise](https://github.com/plataformatec/devise)
 - **[Sinatra](http://www.sinatrarb.com/configuration.html)**
 - **[Git](https://git-scm.com/docs)**
   - [Github formatting](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - **[Heroku](https://www.theodinproject.com/courses/ruby-on-rails/lessons/deployment)**
+- **[MailDev](http://danfarrelly.nyc/MailDev/)**
 
 ### Cursus
 
