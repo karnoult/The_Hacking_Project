@@ -28,7 +28,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
 - **[Git](https://git-scm.com/docs)**
   - [Github formatting](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - **[Heroku](https://www.theodinproject.com/courses/ruby-on-rails/lessons/deployment)**
-- **[MailDev](http://danfarrelly.nyc/MailDev/)
+- **[MailDev](http://danfarrelly.nyc/MailDev/)**
 
 ### Cursus
 
