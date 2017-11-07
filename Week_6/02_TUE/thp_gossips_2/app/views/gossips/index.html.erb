@@ -3,8 +3,11 @@
     <strong>Gossip n°<%= index %></strong><br />
     (created on <%= gossip.creation_datetime.strftime("%d %b %Y") %> by <%= gossip.creator.username %>)<br />
     --->
-    <%= gossip.content %><br />
-    <%= link_to "edit", edit_gossip_path(gossip), class: "badge badge-info" %> <%= link_to "delete", gossip_path(gossip), method: :delete, class: "badge badge-danger", data: { confirm: "T'es sûr de toi ?" } %>
+    <%= gossip.content %>
+    <% if user_signed_in? %>
+      <br />
+      <%= link_to "edit", edit_gossip_path(gossip), class: "badge badge-info" %> <%= link_to "delete", gossip_path(gossip), method: :delete, class: "badge badge-danger", data: { confirm: "T'es sûr de toi ?" } %>
+    <% end %>
   </div>
   <p>------------------------------------</p>
 <% end %>
