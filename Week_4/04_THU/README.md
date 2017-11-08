@@ -1,9 +1,3 @@
-## Moussaillons / Gossips / Commentaires
-
-https://github.com/karnoult/THP_CRUD_Addict
+![screenshot](public/thp_gossips_2_screenshot.png?raw=true)
 
 https://my-hacking-crud.herokuapp.com/
-
-## MVC
-
-https://github.com/karnoult/The_Hacking_Project/tree/master/Week_4/04_THU/PlayWithModels
