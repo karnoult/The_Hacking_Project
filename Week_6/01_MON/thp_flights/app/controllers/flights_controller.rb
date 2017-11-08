@@ -4,14 +4,14 @@ class FlightsController < ApplicationController
     # return if no params
     params = params_flights
 
-    return if !params
-
     # get all airports for the select field
     @airports = Airport.all
 
-    from_id = params_flights[:airport][:departure_airport_id].to_i
-    to_id = params_flights[:airport][:arrival_airport_id].to_i
-    departure_date = params_flights[:departure_date]
+    return if params == {}
+
+    from_id = params[:airport][:departure_airport_id].to_i
+    to_id = params[:airport][:arrival_airport_id].to_i
+    departure_date = params[:departure_date]
 
     # retrieve airport codes if IDs passed as parameters
     @departure_airport_code = Airport.find(from_id).airport_code if from_id > 0
