@@ -1,0 +1,245 @@
+@font-face {
+  font-family: 'roboto';
+  src: url("Roboto-Regular.ttf") format("truetype");
+}
+/* line 6, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+* {
+  outline: 0;
+  font-family: arial, sans-serif;
+}
+
+/* line 11, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* line 16, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+body {
+  /*display:flex;
+  justify-content: center;
+  flex-direction: column;*/
+}
+
+/* line 22, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+.underline:hover {
+  text-decoration: underline;
+}
+
+/* HEADER */
+/* line 28, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+/* line 34, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+header ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 40, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+#header_right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* line 45, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+header a {
+  font-size: small;
+  color: #666;
+  text-decoration: none;
+}
+
+/* line 51, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+header li {
+  margin: 0px 12px 0 12px;
+}
+
+/* line 55, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+#icon1 {
+  color: grey;
+}
+
+/* line 59, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+#bell {
+  background-color: grey;
+  width: 10px;
+  height: 10px;
+  padding: 3px;
+  border: solid grey 1px;
+  border-radius: 12px;
+}
+
+/* line 68, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+#bell:hover {
+  background-color: black;
+  border: solid black 1px;
+}
+
+/* line 73, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+#account {
+  background-color: purple;
+  width: 10px;
+  height: 10px;
+  padding: 9px 12px 8px 12px;
+  border: solid purple 0px;
+  border-radius: 21px;
+  color: white;
+  font-size: 14px;
+  margin-left: -3px;
+}
+
+/* MAIN */
+/* line 87, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+.corps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+/* line 95, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+#logo {
+  height: 92px;
+  width: 272px;
+}
+
+/* line 100, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+#france {
+  font-size: 16px;
+  font-family: roboto;
+  color: #4285f4;
+  position: relative;
+  left: 11px;
+  top: -25px;
+}
+
+/* line 109, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+#div_search {
+  margin: 0 12px 0 12px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+  border: 0.1px solid #fff;
+}
+
+/* line 116, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+#div_search:hover {
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+/* line 120, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+#search {
+  margin-left: 10px;
+  width: 584px;
+  height: 44px;
+  border: none;
+  font-size: 16px;
+}
+
+/* line 128, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+#rech, #lucky, #central {
+  padding: 0px 16px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 35px 5px 0 5px;
+  height: 36px;
+  border: 1px solid #fff;
+  background-color: #f2f2f2;
+  color: #757575;
+  border-radius: 3px;
+  line-height: 27px;
+}
+
+/* line 143, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+#rech:hover, #lucky:hover, #central:hover {
+  box-shadow: 0 1px 1px 0 grey;
+  color: black;
+  border: 1px solid #c6c6c6;
+}
+
+/* FOOTER */
+/* line 151, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+/* line 157, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+#footer_left {
+  justify-content: flex-start;
+}
+
+/* line 161, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+#footer_right {
+  justify-content: flex-end;
+}
+
+/* line 165, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+footer nav {
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 171, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+footer ul {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  list-style-type: none;
+  padding: 0;
+}
+
+/* line 179, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+footer li {
+  margin: 0px 15px 0 15px;
+}
+
+/* line 183, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+footer a {
+  font-size: small;
+  color: #666;
+  text-decoration: none;
+}
+
+/* line 189, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+#tableau div {
+  background-color: red;
+  border: 1px solid;
+  margin: -1px;
+  padding: 0;
+}
+
+/* line 196, /Users/karnoult/Dev/THP/Week_6/03_WED/pipeline/app/assets/stylesheets/elgoogs.scss */
+#tableau {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid;
+  margin: 0;
+  padding: 0;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
