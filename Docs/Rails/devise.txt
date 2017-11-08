@@ -36,7 +36,7 @@ rails db:migrate
 rails g migration AddAddressToUsers address:string
 
 ApplicationController
-  before_action :sanitize_devise_params, if :devise_controller?
+  before_action :sanitize_devise_params, if: :devise_controller?
 
   protected
 
