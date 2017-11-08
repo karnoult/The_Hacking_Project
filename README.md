@@ -42,9 +42,9 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
 - **Week 2**
   - [Monday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_2/01_MON): Ruby
   - [Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_2/02_TUE): Ruby / RSpec
-  - [Wednesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_2/03_WED): Ruby / gem pry / gem Twitter
-  - [Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_2/04_THU): Ruby (XPath) / gem Nokogiri
-  - [Friday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_2/05_FRI): Ruby / gem Watir / reveal.js
+  - [Wednesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_2/03_WED): Ruby / gem pry / gem Twitter (**Twitter Bot**)
+  - [Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_2/04_THU): Ruby (XPath) / gem Nokogiri (**Townhalls scrapping**)
+  - [Friday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_2/05_FRI): Ruby / gem Watir (**FB scrapping**) / reveal.js
 - **Week 3**
   - [Monday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_3/01_MON): Ruby (File / JSON / CSV) / gem Google Drive
   - [Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_3/02_TUE): Ruby / gem Gmail
