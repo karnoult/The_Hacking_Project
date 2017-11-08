@@ -25,12 +25,13 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
   - [Book](https://www.railstutorial.org/book)
   - [Guides](http://guides.rubyonrails.org/index.html)
   - Gems
-    - [Devise](https://github.com/plataformatec/devise)
-- **[Sinatra](http://www.sinatrarb.com/configuration.html)**
+    - **[Devise](https://github.com/plataformatec/devise)**
 - **[Git](https://git-scm.com/docs)**
   - [Github formatting](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
-- **[Heroku](https://www.theodinproject.com/courses/ruby-on-rails/lessons/deployment)**
-- **[MailDev](http://danfarrelly.nyc/MailDev/)**
+- Other tools
+  - **[Heroku](https://www.theodinproject.com/courses/ruby-on-rails/lessons/deployment)**
+  - **[Sinatra](http://www.sinatrarb.com/configuration.html)** (Rails-like)
+  - **[MailDev](http://danfarrelly.nyc/MailDev/)**
 
 ### Cursus
 
@@ -52,18 +53,18 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
   - **[Friday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_3/05_FRI):** Ruby / Sinatra / Regex(todo)
 - **Week 4**
   - **Monday:** Rails (intro)
-  - **[Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_2/01_MON):** Rails (MVC / CRUD)
-  - **Wednesday:** Rails (MVC / CRUD)
+  - **[Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_4/02_TUE):** Rails (MVC / CRUD / Forms)
+  - **[Wednesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_4/03_WED/the-gossip-project):** Gossips - Rails (MVC / CRUD)
   - **[Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_4/04_THU):** Rails (MVC / CRUD)
   - **Friday:** Rails (MVC / CRUD)
 - **Week 5**
-  - **Monday:**  Rails (authentication)
+  - **Monday:** Rails (authentication)
   - **[Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_5/02_TUE):** Rails (authentication)
-  - **Thursday:** Rails (associations)
-  - **[Friday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_5/02_FRI):** Rails (associations)
+  - **[Thursday]():** Rails (associations)
+  - **[Friday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_5/05_FRI):** Eventbrite - Rails (associations)
 - **Week 6**
-  - **Monday:** 
-  - **Tuesday:** 
+  - **[Monday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_6/01_MON):** Flights booking - Rails (forms)
+  - **[Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_6/02_TUE):** Gossips (bis) - Rails (gem Devise)
   - **Wednesday:** 
   - **Thursday:** 
   - **Friday:** 
