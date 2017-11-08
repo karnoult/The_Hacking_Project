@@ -60,7 +60,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
 - **Week 5**
   - **Monday:** Rails (authentication)
   - **[Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_5/02_TUE):** Rails (authentication)
-  - **[Thursday]():** Rails (associations)
+  - **[Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_5/04_THU):** Rails (associations)
   - **[Friday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_5/05_FRI):** Eventbrite - Rails (associations)
 - **Week 6**
   - **[Monday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_6/01_MON):** Flights booking - Rails (forms)
