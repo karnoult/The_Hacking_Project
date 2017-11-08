@@ -1,0 +1,15 @@
+<h2>new.</h2>
+
+<%= form_for @moussaillon do |f| %>
+  <div class="form-group">
+    <%= f.text_field :first_name, placeholder: "Ton nom", class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.text_field :age, placeholder: "Ton age", class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.submit 'Go !', class: "btn btn-default" %>
+  </div>
+<% end %>
+
+<%= link_to 'Voir tous les moussaillons !', moussaillons_path %>

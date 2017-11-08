@@ -1,0 +1,13 @@
+<table class="table">
+  <% @moussaillons.each do |moussaillon| %>
+    <tr>
+      <td><%= moussaillon.first_name %></td>
+      <td><%= moussaillon.age %></td>
+      <td><%= link_to "voir de plus près", moussaillon_path(moussaillon.id) %></td>
+      <td><%= link_to "éditer", edit_moussaillon_path(moussaillon.id) %></td>
+      <td><%= link_to "supprimer", moussaillon_path(moussaillon.id), method: :delete, data: { confirm: "T'es sûr de toi ?" } %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= button_to 'Nouveau moussaillon !', new_moussaillon_path, method: :get %>
