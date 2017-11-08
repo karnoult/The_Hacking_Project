@@ -36,53 +36,53 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
 ### Cursus
 
 - **Week 1**
-  - **[Wednesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_1/03_WED):** HTML / CSS
-  - **[Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_1/04_THU):** HTML / CSS / JavaScript
-  - **[Friday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_1/05_FRI):** HTML / CSS / jQuery
+  - [Wednesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_1/03_WED): HTML / CSS
+  - [Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_1/04_THU): HTML / CSS / JavaScript
+  - [Friday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_1/05_FRI): HTML / CSS / jQuery
 - **Week 2**
-  - **[Monday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_2/01_MON):** Ruby
-  - **[Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_2/02_TUE):** Ruby / RSpec
-  - **[Wednesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_2/03_WED):** Ruby / gem pry / gem Twitter
-  - **[Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_2/04_THU):** Ruby (XPath) / gem Nokogiri
-  - **[Friday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_2/05_FRI):** Ruby / gem Watir / reveal.js
+  - [Monday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_2/01_MON): Ruby
+  - [Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_2/02_TUE): Ruby / RSpec
+  - [Wednesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_2/03_WED): Ruby / gem pry / gem Twitter
+  - [Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_2/04_THU): Ruby (XPath) / gem Nokogiri
+  - [Friday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_2/05_FRI): Ruby / gem Watir / reveal.js
 - **Week 3**
-  - **[Monday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_3/01_MON):** Ruby (File / JSON / CSV) / gem Google Drive
-  - **[Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_3/02_TUE):** Ruby / gem Gmail
-  - **[Wednesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_3/03_WED):** Ruby (Class, attributes, methods, and inheritance)
-  - **[Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_3/04_THU):** Ruby
-  - **[Friday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_3/05_FRI):** Ruby / Sinatra / Regex(todo)
+  - [Monday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_3/01_MON): Ruby (File / JSON / CSV) / gem Google Drive
+  - [Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_3/02_TUE): Ruby / gem Gmail
+  - [Wednesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_3/03_WED): Ruby (Class, attributes, methods, and inheritance)
+  - [Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_3/04_THU): Ruby
+  - [Friday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_3/05_FRI): Ruby / Sinatra (**Web guesser**) / Regex(todo)
 - **Week 4**
-  - **Monday:** Rails (intro)
-  - **[Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_4/02_TUE):** Rails (MVC / CRUD / Forms)
-  - **[Wednesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_4/03_WED/the-gossip-project):** Gossips - Rails (MVC / CRUD)
-  - **[Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_4/04_THU):** Gossips (2) - Rails (MVC / CRUD)
-  - **Friday:** Rails (MVC / CRUD)
+  - Monday: Rails (intro)
+  - [Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_4/02_TUE): Rails (MVC / CRUD / Forms)
+  - [Wednesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_4/03_WED/the-gossip-project): **Gossips** - Rails (MVC / CRUD)
+  - [Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_4/04_THU): **Gossips (2)** - Rails (MVC / CRUD)
+  - Friday: Rails (MVC / CRUD)
 - **Week 5**
-  - **Monday:** Rails (authentication)
-  - **[Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_5/02_TUE):** Rails (authentication)
-  - **[Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_5/04_THU):** Rails (associations)
-  - **[Friday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_5/05_FRI):** Eventbrite - Rails (associations)
+  - Monday: Rails (authentication)
+  - [Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_5/02_TUE): Rails (authentication)
+  - [Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_5/04_THU): Rails (associations)
+  - [Friday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_5/05_FRI): **Eventbrite** - Rails (associations)
 - **Week 6**
-  - **[Monday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_6/01_MON):** Flights - Rails (forms)
-  - **[Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_6/02_TUE):** Gossips (3) - Rails (gem Devise)
-  - **Wednesday:** 
-  - **Thursday:** 
-  - **Friday:** 
+  - [Monday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_6/01_MON): **Flights** - Rails (forms)
+  - [Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_6/02_TUE): **Gossips (3)** - Rails (gem Devise)
+  - Wednesday: 
+  - Thursday: 
+  - Friday: 
 - **Week 7**
-  - **Monday:** 
-  - **Tuesday:** 
-  - **Wednesday:** 
-  - **Thursday:** 
-  - **Friday:** 
+  - Monday: 
+  - Tuesday: 
+  - Wednesday: 
+  - Thursday: 
+  - Friday: 
 - **Week 8**
-  - **Monday:** 
-  - **Tuesday:** 
-  - **Wednesday:** 
-  - **Thursday:** 
-  - **Friday:** 
+  - Monday: 
+  - Tuesday: 
+  - Wednesday: 
+  - Thursday: 
+  - Friday: 
 - **Week 9**
-  - **Monday:** 
-  - **Tuesday:** 
-  - **Wednesday:** 
-  - **Thursday:** 
-  - **Friday:** 
+  - Monday: 
+  - Tuesday: 
+  - Wednesday: 
+  - Thursday: 
+  - Friday: 
