@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  anonymous_author: MyString
-  content: MyString
+  autor: MyString
+  content: MyText
 
 two:
-  anonymous_author: MyString
-  content: MyString
+  autor: MyString
+  content: MyText

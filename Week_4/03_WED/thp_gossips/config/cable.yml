@@ -7,4 +7,4 @@ test:
 production:
   adapter: redis
   url: redis://localhost:6379/1
-  channel_prefix: the-gossip-project_production
+  channel_prefix: THP_Gossips_production
