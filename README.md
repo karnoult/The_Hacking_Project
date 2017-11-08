@@ -49,7 +49,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
   - [Monday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_3/01_MON): Ruby (File / JSON / CSV) / gem Google Drive
   - [Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_3/02_TUE): Ruby / gem Gmail
   - [Wednesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_3/03_WED): Ruby (Class, attributes, methods, and inheritance)
-  - [Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_3/04_THU): Ruby
+  - [Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_3/04_THU): Ruby - **Tic Tac Toe**
   - [Friday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_3/05_FRI): Ruby / Sinatra - **Web guesser** / Regex(todo)
 - **Week 4**
   - Monday: Rails (intro)
