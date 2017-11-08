@@ -38,7 +38,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
 - **Week 1**
   - [Wednesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_1/03_WED): HTML / CSS - **Elgoog**
   - [Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_1/04_THU): HTML / CSS / JavaScript  - **Elgoog (2)**
-  - [Friday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_1/05_FRI): HTML / CSS / jQuery
+  - [Friday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_1/05_FRI): HTML / CSS / jQuery - **Birthday card**
 - **Week 2**
   - [Monday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_2/01_MON): Ruby
   - [Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_2/02_TUE): Ruby / RSpec
