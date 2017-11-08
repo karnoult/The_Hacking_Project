@@ -1,16 +1,35 @@
-<h1>Show all gossips</h1>
+<h1>Hello Gossips!</h1>
 
-<table>
-<% @gossips.each do |gossip| %>
-  <tr>
-  <td><%= link_to gossip.id, gossip_path(gossip) %></td>
-  <td><%= gossip.anonymous_author%></td>
-  <td><%= gossip.content%></td>
-  <td><%= link_to 'edit', edit_gossip_path(gossip) %></td>
-  <td><%= link_to 'delete', gossip, method: :delete %></td>
-  </tr>
-<% end %>
-
+<table class="table">
+  <% @gossips.each do |gossip| %>
+    <tr>
+      <td><%= gossip.author %></td>
+      <td><%= gossip.content %></td>
+      <td><%= link_to "voir de plus près", gossip %></td>
+      <td><%= link_to "modérer", edit_gossip_path(gossip) %></td>
+      <td><%= link_to "supprimer",
+        gossip_path(gossip),
+        method: :delete,
+        data: { confirm: "T'as des trucs à cacher ?" } %></td>
+    </tr>
+  <% end %>
 </table>
 
-<p><%= button_to 'Add a gossip', new_gossip_path %></p>
+
+<!--<div class="container">
+  <% @gossips.each_with_index do |gossip, i| %>
+    <%if i%3 == 0 %>
+    <div class="row">
+    <% end %>
+      <div class="col">
+      <%= gossip.id %>
+      <%= gossip.author %>
+      <%= gossip.content %>
+      </div>
+    <%if i%3 == 0 %>
+    </div>
+    <% end %>
+  <% end %>
+</div>-->
+
+<%= link_to 'Gossip!', new_gossip_path %>

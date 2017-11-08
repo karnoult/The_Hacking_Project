@@ -1,6 +1,9 @@
-<%= form_for(:gossip, url: '/gossips') do |f| %>
-  Auteur : <%= f.text_field :anonymous_author %><br />
-  Contenu : <%= f.text_area :content %><br />
-  <%= f.submit %>
+<h1>Gossip time!!!</h1>
+
+<%= form_tag("/gossips/#{@gossip.id}") do %>
+  <p>Who are you? <%= text_field_tag 'gossip[author]' %></p>
+  <p>What do you want to gossip? <%= text_area_tag 'gossip[content]' %></p>
+  <p><%= submit_tag 'Gossip!' %></p>
 <% end %>
-<%= link_to 'Retour', root_path %>
+
+<%= link_to 'Hello Gossips!', gossips_path %>

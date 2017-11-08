@@ -1,8 +1,7 @@
-<div>
-Gossip qui vient d'être crée :</br>
-Auteur: <%= @gossip.anonymous_author %></br>
-Contenu: <%= @gossip.content %>
-</div>
+<h1>Gossip #<%= @gossip.id %></h1>
 
-<%= link_to 'Editer le gossip', edit_gossip_path %>
-<%= link_to 'Lister les gossips', gossips_path %>
+<strong>Author: </strong><%= @gossip.author %><br />
+<strong>Content: </strong><%= @gossip.content %><br /><br />
+
+<%= link_to 'Edit this gossip', edit_gossip_path %><br />
+<%= link_to 'Hello Gossips!', root_path %>

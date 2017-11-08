@@ -1,15 +1,6 @@
 class GossipsController < ApplicationController
-
   def new
     @gossip = Gossip.new
-  end
-
-  def show
-    @gossip = Gossip.find(params[:id])
-  end
-
-  def index
-    @gossips = Gossip.all
   end
 
   def create
@@ -17,8 +8,16 @@ class GossipsController < ApplicationController
     if @gossip.save
       redirect_to @gossip
     else
-      redirect_to new_gossip_path
+      render 'new'
     end
+  end
+
+  def index
+    @gossips = Gossip.all
+  end
+
+  def show
+    @gossip = Gossip.find(params[:id])
   end
 
   def edit
@@ -27,12 +26,12 @@ class GossipsController < ApplicationController
 
   def update
     @gossip = Gossip.find(params[:id])
-    @gossip.anonymous_author = gossip_params[:anonymous_author]
+    @gossip.author = gossip_params[:author]
     @gossip.content = gossip_params[:content]
     if @gossip.save
       redirect_to @gossip
     else
-      redirect_to edit_gossip_path
+      render 'edit'
     end
   end
 
@@ -44,7 +43,6 @@ class GossipsController < ApplicationController
 
   private
   def gossip_params
-    params[:gossip].permit(:anonymous_author, :content)
+    params[:gossip].permit(:author, :content)
   end
-
 end
