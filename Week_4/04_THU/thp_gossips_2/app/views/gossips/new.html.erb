@@ -1,0 +1,12 @@
+<h1>new.gossip.</h1>
+
+<%= form_for @gossip, url: moussaillon_gossips_path do |f| %>
+  <div class="form-group">
+    <%= f.text_field :body, placeholder: "body", class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.submit 'create!', class: "btn btn-default" %>
+  </div>
+<% end %>
+
+<%= button_to 'back!', moussaillons_path, method: :get, class: "btn btn-default" %>

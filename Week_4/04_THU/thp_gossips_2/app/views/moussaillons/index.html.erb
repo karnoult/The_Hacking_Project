@@ -1,0 +1,31 @@
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th>username</th>
+      <th>bio</th>
+      <th>gossips</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @moussaillons.each do |moussaillon| %>
+      <tr>
+        <td><%= link_to moussaillon.username, moussaillon_path(moussaillon.id) %></td>
+        <td><%=
+          if !moussaillon.bio.nil?
+            moussaillon.bio[0, 200] + "..."
+          else
+            "..."
+          end
+          %>
+        </td>
+        <td><%=
+            if moussaillon.gossips.count > 0
+              link_to moussaillon.gossips.count, moussaillon_path(moussaillon.id)
+            else
+              render html: "-"
+            end
+          %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

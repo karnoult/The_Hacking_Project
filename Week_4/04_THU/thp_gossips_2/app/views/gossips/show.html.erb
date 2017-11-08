@@ -1,0 +1,8 @@
+<h1><%= @gossip.id %></h1>
+<%= @gossip.body %><br />
+<div>
+  <%= link_to 'Modifie les infos du gossip', edit_gossip_path %>
+</div>
+<div>
+  <%= link_to 'back!', moussaillon_path(@gossip.moussaillon.id) %>
+</div>

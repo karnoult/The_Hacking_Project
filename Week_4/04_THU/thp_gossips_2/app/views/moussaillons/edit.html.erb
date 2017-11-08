@@ -1,0 +1,19 @@
+<h1>edit.</h1>
+
+<%= form_for @moussaillon do |f| %>
+  <div class="form-group">
+    <%= f.text_field :username, placeholder: "username", class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.text_field :email, placeholder: "email", class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.text_area :bio, placeholder: "bio", class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.submit 'save!', class: "btn btn-default" %>
+  </div>
+<% end %>
+
+<%= link_to "delete", moussaillon_path(@moussaillon.id), method: :delete, data: { confirm: "T'es sûr de toi ?" } %>
+<%= button_to 'back!', moussaillon_path(@moussaillon.id), method: :get, class: "btn btn-default" %>

@@ -1,0 +1,40 @@
+<h1><%= @moussaillon.username %></h1>
+<%= @moussaillon.email %><br />
+<blockquote class="blockquote"><%= @moussaillon.bio %></blockquote>
+<div>
+  <p>
+    <%= link_to 'Modifie les infos du moussaillon', edit_moussaillon_path %>
+  </p>
+  <p>
+    <%= link_to 'Voir tous les moussaillons !', moussaillons_path %>
+  </p>
+  <p>
+    <%= link_to 'Gossip !', new_moussaillon_gossip_path(@moussaillon.id) %>
+  </p>
+</div>
+
+<h2><%= @moussaillon.username %>'s gossips</h2>
+
+<%
+
+colors = "primary", "secondary", "success", "danger", "warning", "info"
+
+%>
+
+<div class="card-deck">
+
+  <% @gossips.each_with_index do |gossip, i| %>
+    <div class="card m-2 border-<%= colors[i%8] %>">
+      <div class="card-body bg-<%= colors[i%8] %>">
+        <h4 class="card-title">Gossip #<%= gossip.id %></h4>
+        <p class="card-text"><%= gossip.body %></p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted"><%= link_to 'show', gossip_path(gossip.id) %><%= link_to "edit", edit_gossip_path(gossip.id) %><%= link_to "delete", gossip_path(gossip.id), method: :delete, data: { confirm: "T'es sûr de toi ?" } %></small>
+      </div>
+    </div>
+    <% if i%4 == 3 %>
+        <div class="w-100"></div>
+      <% end %>
+  <% end %>
+</div>
