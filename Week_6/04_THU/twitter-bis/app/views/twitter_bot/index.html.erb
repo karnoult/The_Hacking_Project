@@ -1,0 +1,9 @@
+<h1>TwitterBot#index</h1>
+<p>Find me in app/views/twitter_bot/index.html.erb</p>
+
+<form action="<%= root_path %>" accept-charset="UTF-8" method="post">
+  <input name="_method" value="patch" type="hidden">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  Text to tweet: <input name="tweet_content" id="tweet" type="text"><br />
+  <input name="commit" value="tweet!" type="submit">
+</form>
