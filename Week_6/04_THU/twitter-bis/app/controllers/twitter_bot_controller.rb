@@ -3,12 +3,13 @@ class TwitterBotController < ApplicationController
   end
 
   def send_tweet
-    SendTweet.new(params_twitter[:tweet_content]).perform
+    SendTweet.new(params_tweet[:content]).perform
+    render 'index'
   end
 
   private
 
-  def params_twitter
-    params.permit(:tweet_content)
+  def params_tweet
+    params.require(:params_tweet).permit(:content)
   end
 end

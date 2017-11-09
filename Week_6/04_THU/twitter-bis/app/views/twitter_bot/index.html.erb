@@ -1,9 +1,8 @@
-<h1>TwitterBot#index</h1>
-<p>Find me in app/views/twitter_bot/index.html.erb</p>
+<h2>TwitterBot de l'année.</h2>
 
-<form action="<%= root_path %>" accept-charset="UTF-8" method="post">
-  <input name="_method" value="patch" type="hidden">
-  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-  Text to tweet: <input name="tweet_content" id="tweet" type="text"><br />
-  <input name="commit" value="tweet!" type="submit">
-</form>
+<%= form_for :params_tweet do |f| %>
+  <%= f.text_field :content, placeholder:"put your tweet here" %>
+  <%= f.submit value:"tweet!" %>
+<% end %>
+<br/>
+<%= link_to "check twitter", "https://twitter.com/mange_pas_cher"%>
