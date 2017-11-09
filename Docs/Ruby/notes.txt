@@ -1,0 +1,2 @@
+$: is the global variable used for looking up external files.
+
