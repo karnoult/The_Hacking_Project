@@ -13,7 +13,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
 - **[Ruby](http://ruby-doc.org/core-2.4.2/)**
   - [Style guide](https://github.com/bbatsov/ruby-style-guide)
   - Gems
-    - [Pry](https://github.com/pry/pry/wiki) (runtime dev console)
+    - **[Pry](https://github.com/pry/pry/wiki)** (runtime dev console)
     - [Nokogiri](http://www.rubydoc.info/github/sparklemotion/nokogiri) (HTML parser w/ CSS and XPATH)
     - [Watir](http://watir.com/guides/) (web app testing)
     - [Twitter](http://www.rubydoc.info/gems/twitter)
@@ -30,7 +30,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
   - [Github formatting](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - Other tools
   - **[Heroku](https://www.theodinproject.com/courses/ruby-on-rails/lessons/deployment)**
-  - **[Sinatra](http://www.sinatrarb.com/configuration.html)** (Rails-like)
+  - [Sinatra](http://www.sinatrarb.com/configuration.html) (Rails-like)
   - **[MailDev](http://danfarrelly.nyc/MailDev/)**
 
 ### Cursus
