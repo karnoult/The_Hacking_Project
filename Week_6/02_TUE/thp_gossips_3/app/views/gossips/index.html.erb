@@ -27,5 +27,7 @@
 <% if user_signed_in? %>
   <%= button_to "add new", new_gossip_path, method: :get, class:'btn btn-default' %>
 <% else %>
-  first <%= link_to "sign in", new_user_session_path, class: "badge badge-info" %> to gossip
+  first <%= link_to "sign in here", new_user_session_path, class: "badge badge-info" %>
+  or <%= link_to "here (facebook)", user_facebook_omniauth_authorize_path, class: "badge badge-info" %> to gossip
+  
 <% end %>

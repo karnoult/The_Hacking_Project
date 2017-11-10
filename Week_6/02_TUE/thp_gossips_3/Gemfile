@@ -6,6 +6,8 @@ git_source(:github) do |repo_name|
 end
 
 gem 'devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
 gem 'bootstrap', '~> 4.0.0.beta2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
