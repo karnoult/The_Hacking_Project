@@ -25,7 +25,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
   - [Book](https://www.railstutorial.org/book)
   - [Guides](http://guides.rubyonrails.org/index.html)
   - Gems
-    - **[Devise](https://github.com/plataformatec/devise)**
+    - **[Devise](https://github.com/plataformatec/devise/wiki/How-Tos)**
 - **[Git](https://git-scm.com/docs)**
   - [Github formatting](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - Other tools
