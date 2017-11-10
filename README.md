@@ -27,7 +27,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
   - Gems
     - **[Devise](https://github.com/plataformatec/devise/wiki/How-Tos)**
     - **[Omniauth](https://github.com/omniauth/omniauth/wiki)**
-    - **[CarrierWave](https://www.grafikart.fr/formations/ruby-on-rails/carrierwave)** (todo)
+    - [CarrierWave](https://www.grafikart.fr/formations/ruby-on-rails/carrierwave) (todo)
 - **[Git](https://git-scm.com/docs)**
   - [Github formatting](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - Other tools
