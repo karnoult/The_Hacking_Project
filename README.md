@@ -32,6 +32,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
   - **[Heroku](https://www.theodinproject.com/courses/ruby-on-rails/lessons/deployment)**
   - [Sinatra](http://www.sinatrarb.com/configuration.html) (Rails-like)
   - **[MailDev](http://danfarrelly.nyc/MailDev/)**
+  - [Surge](http://surge.sh/) (Static web publishing)
 
 ### Cursus
 
