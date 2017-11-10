@@ -26,6 +26,8 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
   - [Guides](http://guides.rubyonrails.org/index.html)
   - Gems
     - **[Devise](https://github.com/plataformatec/devise/wiki/How-Tos)**
+    - **[Omniauth](https://github.com/omniauth/omniauth/wiki)**
+    - **[CarrierWave](https://www.grafikart.fr/formations/ruby-on-rails/carrierwave)** (todo)
 - **[Git](https://git-scm.com/docs)**
   - [Github formatting](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - Other tools
@@ -69,7 +71,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
   - [Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_6/02_TUE): Rails (gem Devise) - **Gossips (3)**
   - [Wednesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_6/03_WED): Rails (assets pipeline) 
   - [Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_6/04_THU): Rails (services)
-  - Friday: 
+  - [Friday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_6/02_TUE): Rails (gem Omniauth / gem CarrierWave / gem Paperclip)
 - **Week 7**
   - Monday: 
   - Tuesday: 
