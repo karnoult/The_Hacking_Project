@@ -1,2 +1,0 @@
-rails g Model User email:string:uniq password:digest
-rails g controller Sessions new create destroy
