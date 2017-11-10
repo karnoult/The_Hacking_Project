@@ -29,6 +29,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
 - **[Git](https://git-scm.com/docs)**
   - [Github formatting](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - Other tools
+  - [Installations](https://www.theodinproject.com/courses/web-development-101/lessons/installations)
   - **[Heroku](https://www.theodinproject.com/courses/ruby-on-rails/lessons/deployment)**
   - [Sinatra](http://www.sinatrarb.com/configuration.html) (Rails-like)
   - **[MailDev](http://danfarrelly.nyc/MailDev/)**
