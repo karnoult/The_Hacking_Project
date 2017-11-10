@@ -66,7 +66,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
   - [Monday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_6/01_MON): Rails (forms) - **Flights**
   - [Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_6/02_TUE): Rails (gem Devise) - **Gossips (3)**
   - [Wednesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_6/03_WED): Rails (assets pipeline) 
-  - Thursday: 
+  - [Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_6/04_THU): Rails (services)
   - Friday: 
 - **Week 7**
   - Monday: 
