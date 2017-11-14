@@ -1,22 +1,22 @@
 <header>
   <div>
     <p>Already have an Intuit account?</p>
-    <p>I forgot my User ID or Password</p>
+    <p><a href="/">I forgot my User ID or Password</a></p>
   </div>
-  <button>Sign In</button>
+  <button><span>Sign In</span></button>
 </header>
 
 <section>
-  <img id="logo" src="assets/logo_intuit_grey.png" />
+  <a href="/" ><img id="logo_top" src="assets/logo_intuit_grey.png" /></a>
   <div id="sign_up">
     <div id="links">
-      <img id="logo_turbotax" src="assets/logo_turbotax.png" />
-      <img id="logo_quickbooks" src="assets/logo_quickbooks.png" />
-      <img id="logo_mint" src="assets/logo_mint.png" />
+      <a href="/" ><img id="logo_turbotax" src="assets/logo_turbotax.png" /></a>
+      <a href="/" ><img id="logo_quickbooks" src="assets/logo_quickbooks.png" /></a>
+      <a href="/" ><img id="logo_mint" src="assets/logo_mint.png" /></a>
     </div>
     <h1>One Account.</h1>
     <h1>Everything Intuit.</h1>
-    <p>Create an account for all of Intuit's products including Mint. <a href="/">Learn more</a></p>
+    <p class="smaller">Create an account for all of Intuit's products including Mint. <a href="/">Learn more</a></p>
 
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= devise_error_messages! %>
@@ -40,12 +40,21 @@
       </div>
 
       <div class="actions">
-        <%= f.submit "Sign up" %>
+        <%= f.button "Create Account" %>
       </div>
     <% end %>
 
-    <p>By clicking Create Account, you agree to our <a href="/">License Agreement</a> and <a href="/">Privacy Statement</a>.</p>
+    <p id="bottom_signup" class="smaller"><em>By clicking Create Account, you agree to our <a href="/">License Agreement</a> and <a href="/">Privacy Statement</a>.</em></p>
   </div>
 </section>
 
-<%= render "devise/shared/links" %>
+<footer>
+  <img id="logo_bottom" src="assets/logo_intuit_grey.png" />
+  <ul>
+    <li><a href="/">Legal</a></li>
+    <li><a href="/">Privacy</a></li>
+    <li><a href="/">Security</a></li>
+  </ul>
+  <p>© 2017 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.</p>
+  <p>Terms and conditions, features, support, pricing, and service options subject to change without notice.</p>
+</footer>
