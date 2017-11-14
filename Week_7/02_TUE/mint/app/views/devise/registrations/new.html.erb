@@ -1,7 +1,7 @@
 <header>
   <div>
-    <p>Already have an Intuit account?</p>
-    <p><a href="/">I forgot my User ID or Password</a></p>
+    <p class="smaller">Already have an Intuit account?</p>
+    <p class="smaller"><a href="/">I forgot my User ID or Password</a></p>
   </div>
   <button><span>Sign In</span></button>
 </header>
@@ -40,7 +40,7 @@
       </div>
 
       <div class="actions">
-        <%= f.button "Create Account" %>
+        <%= f.button "<span>Create Account</span>".html_safe %>
       </div>
     <% end %>
 
