@@ -1,29 +1,51 @@
-<h2>Sign up</h2>
-
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+<header>
+  <div>
+    <p>Already have an Intuit account?</p>
+    <p>I forgot my User ID or Password</p>
   </div>
+  <button>Sign In</button>
+</header>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
+<section>
+  <img id="logo" src="assets/logo_intuit_grey.png" />
+  <div id="sign_up">
+    <div id="links">
+      <img id="logo_turbotax" src="assets/logo_turbotax.png" />
+      <img id="logo_quickbooks" src="assets/logo_quickbooks.png" />
+      <img id="logo_mint" src="assets/logo_mint.png" />
+    </div>
+    <h1>One Account.</h1>
+    <h1>Everything Intuit.</h1>
+    <p>Create an account for all of Intuit's products including Mint. <a href="/">Learn more</a></p>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= devise_error_messages! %>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
+      <div class="field">
+        <%= f.label 'Email address' %><br />
+        <%= f.email_field :email, autofocus: true %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password %>
+        <% if @minimum_password_length %>
+        <em>(<%= @minimum_password_length %> characters minimum)</em>
+        <% end %><br />
+        <%= f.password_field :password, autocomplete: "off" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password_confirmation %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "off" %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Sign up" %>
+      </div>
+    <% end %>
+
+    <p>By clicking Create Account, you agree to our <a href="/">License Agreement</a> and <a href="/">Privacy Statement</a>.</p>
   </div>
-<% end %>
+</section>
 
 <%= render "devise/shared/links" %>
