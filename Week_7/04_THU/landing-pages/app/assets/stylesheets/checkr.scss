@@ -48,7 +48,7 @@ p {
 #screen_1_background {
     height: 770px;
     background: 50% 50% / cover no-repeat;
-    background-image: url("https://checkr.com/wp-content/uploads/2015/10/checkr_header_industries-1.jpg");
+    background-image: image-url('checkr_header_industries-1.jpg');
     opacity: 0.3;
 }
 
@@ -183,7 +183,7 @@ header button:after {
     display: inline-block;
     width: 12px;
     height: 9px;
-    background: url("https://checkr.com/wp-content/themes/checkr/assets/img/arrow-right_yellow.svg") center center/1.11rem 0.89rem no-repeat;
+    background: image-url('arrow-right_yellow.svg') center center/1.11rem 0.89rem no-repeat;
     margin-left: 7px;
 }
 
@@ -224,7 +224,7 @@ header button:after {
     width: 14px;
     height: 11px;
     background: 50% 50% / 14px 11px no-repeat;
-    background-image: url(https://checkr.com/wp-content/themes/checkr/assets/img/arrow-right_blue-dark.svg);
+    background-image: image-url('arrow-right_blue-dark.svg');
     transition: all 200ms cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
     transform: translateX(6px);
 }
@@ -304,7 +304,7 @@ header button:after {
     height: 190px;
     margin: 5px;
     background: 50% 50% / cover no-repeat;
-    background-image: url('https://checkr.com/wp-content/uploads/2017/03/Smiling-worker-doing-her-job-with-a-headset-while-looking-at-the-camera.jpeg');
+    background-image: image-url('Smiling-worker-doing-her-job-with-a-headset-while-looking-at-the-camera.jpeg');
     transition: opacity 200ms;
     cursor: pointer;
 }
