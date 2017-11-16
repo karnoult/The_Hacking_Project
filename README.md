@@ -74,8 +74,8 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
   - [Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_6/04_THU): Rails (services) - **Twitter** / **MoviesDB**
   - [Friday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_6/02_TUE): Rails (gem Omniauth / gem CarrierWave / gem Paperclip)
 - **Week 7**
-  - [Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_6/02_TUE): **mint.com**
-  - [Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_6/04_THU): **checkr.com**
+  - [Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_7/02_TUE): **mint.com**
+  - [Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_7/04_THU): **checkr.com**
   - Friday: 
 - **Week 8**
   - Monday: 
