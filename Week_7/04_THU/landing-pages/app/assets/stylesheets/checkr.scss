@@ -8,7 +8,6 @@ body {
     background-color: #3C79BB;
     color: white;
     margin: 0px;
-    padding: 0px;
 }
 
 strong {
@@ -54,8 +53,6 @@ p {
 
 #screen_1 {
     box-sizing: border-box;
-    width: 100%;
-    height: 770px;
     position: absolute;
     top: 0px;
     padding-right: 120px;
@@ -85,6 +82,7 @@ nav li {
 
 header {
     display: flex;
+    padding-top: 10px;
 }
 
 header > div {
@@ -167,9 +165,10 @@ header button {
     border-radius: 3px;
     border: 2px solid #E9CA2C;
     color: #E9CA2C;
-    padding: 20px;
     background: none;
     cursor: pointer;
+    width: 170px;
+    height: 50px;
 }
 
 header button:hover {    
@@ -181,9 +180,19 @@ header button:after {
     content: '';
     transition: all 200ms ease 0ms;
     display: inline-block;
-    width: 12px;
-    height: 9px;
-    background: image-url('arrow-right_yellow.svg') center center/1.11rem 0.89rem no-repeat;
+    width: 15px;
+    height: 12px;
+    background: image-url('arrow-right_yellow.svg') center center/15px 12px no-repeat;
+    margin-left: 7px;
+}
+
+header button:hover:after {    
+    content: '';
+    transition: all 200ms ease 0ms;
+    display: inline-block;
+    width: 15px;
+    height: 12px;
+    background: image-url('arrow-right_blue-dark.svg') center center/15px 12px no-repeat;
     margin-left: 7px;
 }
 
