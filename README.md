@@ -37,6 +37,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
   - [Sinatra](http://www.sinatrarb.com/configuration.html) (Rails-like)
   - **[MailDev](http://danfarrelly.nyc/MailDev/)**
   - [Surge](http://surge.sh/) (Static web publishing)
+  - [Visual Studio Code](https://code.visualstudio.com/docs/languages/html)
 
 ### Cursus
 
@@ -76,7 +77,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
 - **Week 7**
   - [Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_7/02_TUE/mint): **mint.com**
   - [Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_7/04_THU/landing-pages): **checkr.com**
-  - Friday: 
+  - [Friday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_7/04_THU/landing-pages): Atelier Blockchain (Ruby)
 - **Week 8**
   - Monday: 
   - Tuesday: 
