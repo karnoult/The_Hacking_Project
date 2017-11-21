@@ -11,6 +11,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
   - Frameworks
     - [Bootstrap](http://getbootstrap.com/)
     - [Tacit](https://github.com/yegor256/tacit)
+- **[JavaScript](http://eloquentjavascript.net/)**
 - **[Ruby](http://ruby-doc.org/core-2.4.2/)**
   - [Style guide](https://github.com/bbatsov/ruby-style-guide)
   - Gems
