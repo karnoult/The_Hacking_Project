@@ -1,20 +1,21 @@
 var tiles = ["green", "blue", "red", "yellow"];
 var seq;
 var turn;
-var elementClicked;
+var tileClicked;
 
+document.getElementById("start").addEventListener("click", function () { return init(); });
+
+// init game
 function init() {
     turn = 0;
-    seq = [Math.floor((Math.random() * 4))];
+    seq = [];
     for (var i = 0; i < tiles.length; i++) {
         document.getElementById(tiles[i]).addEventListener("click", clickTile);
     }
-
     newTile();
-    
-    console.log(seq);
 }
 
+// stop game
 function loose() {
     document.getElementById("black").textContent = "you loose";
     for (var i = 0; i < tiles.length; i++) {
@@ -22,51 +23,42 @@ function loose() {
     }
 }
 
-function updateTurn() {
-    document.getElementById("black").textContent = seq.length;
-}
-
 function clickTile() {
     // only one tile can be clicked at a time
-    if (elementClicked) return;
+    if (tileClicked) return;
 
-    i = this.getAttribute("value");
+    tileClicked = this;
 
-    new Audio("audio/beep-" + i + ".mp3").play();
+    // identify which tile has been clicked
+    tileClickedIndex = tileClicked.getAttribute("value");
+
+    // play sound
+    new Audio("/assets/audio/beep-" + tileClickedIndex + ".mp3").play();
 
     // show which tile has been clicked
-    elementClicked = this;
-    elementClicked.style.opacity = 0.5;
+    tileClicked.style.opacity = 0.5;
     setTimeout(function () {
-        elementClicked.style.opacity = 1;
-        elementClicked = null;
-        checkTileClicked(i);
+        tileClicked.style.opacity = 1;
+        tileClicked = null;
+        checkTileClicked(tileClickedIndex);
     }, 100);
 }
 
-function checkTileClicked(i) {
-    if (i == seq[turn]) {
-        turn++;
-        if (turn == seq.length) {
-            turn = 0;
-            newTile();
-            updateTurn();
-        }
-    } else {
-        loose();
-    }
-
-    console.log(seq);
-}
-
+// add a new tile to the game sequence
 function newTile() {
+    turn = 0;
     seq.push(Math.floor((Math.random() * 4)));
-    updateTurn();
+    document.getElementById("black").textContent = seq.length;
     highlightTile();
 }
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+function checkTileClicked(tileClickedIndex) {
+    if (tileClickedIndex == seq[turn]) {
+        turn++;
+        if (turn == seq.length)
+            newTile();
+    } else
+        loose();
 }
 
 async function highlightTile(i = 0) {
@@ -78,11 +70,13 @@ async function highlightTile(i = 0) {
     }
 
     if (i != seq.length) {
-        new Audio("audio/beep-" + seq[i] + ".mp3").play();
+        new Audio("/assets/audio/beep-" + seq[i] + ".mp3").play();
         document.getElementById(tiles[seq[i]]).style.opacity = 0.5;
         i++
         setTimeout(function () { highlightTile(i); }, 500);
     }
 }
 
-document.getElementById("start").addEventListener("click", function () { return init(); });
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
