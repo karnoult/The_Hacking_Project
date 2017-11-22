@@ -6,11 +6,12 @@ var elementClicked;
 function init() {
     turn = 0;
     seq = [Math.floor((Math.random() * 4))];
-    highlightTile();
     for (var i = 0; i < tiles.length; i++) {
         document.getElementById(tiles[i]).addEventListener("click", clickTile);
     }
-    updateTurn();
+
+    newTile();
+    
     console.log(seq);
 }
 
@@ -48,8 +49,7 @@ function checkTileClicked(i) {
         turn++;
         if (turn == seq.length) {
             turn = 0;
-            seq.push(Math.floor((Math.random() * 4)));
-            highlightTile();
+            newTile();
             updateTurn();
         }
     } else {
@@ -57,6 +57,12 @@ function checkTileClicked(i) {
     }
 
     console.log(seq);
+}
+
+function newTile() {
+    seq.push(Math.floor((Math.random() * 4)));
+    updateTurn();
+    highlightTile();
 }
 
 function sleep(ms) {
