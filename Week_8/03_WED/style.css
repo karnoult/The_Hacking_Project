@@ -1,0 +1,57 @@
+div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+}
+button {
+    position: absolute;
+    width: 180px;
+    height: 20px;
+    margin: 0px 10px 0px 10px;
+    background: none;
+}
+
+#black{
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 100px;
+    top: 200px;
+    left: 250px;
+    line-height: 100px;
+    text-align: center;
+}
+
+#green{
+    background-color: rgb(125, 169, 125);
+    top: 50px;
+    left: 100px;
+}
+
+#blue{
+    background-color: rgb(137, 137, 182);
+    top: 50px;
+    left: 300px;
+}
+
+#red{
+    background-color: rgb(213, 113, 113);
+    top: 250px;
+    left: 300px;
+}
+
+#yellow{
+    background-color: rgb(242, 242, 92);
+    top: 250px;
+    left: 100px;
+}
+
+#start {
+    top: 470px;
+    left: 200px;
+}
+
+.pointer {
+    cursor: pointer;
+}
