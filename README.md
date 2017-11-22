@@ -78,11 +78,9 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
 - **Week 7**
   - [Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_7/02_TUE/mint): **mint.com**
   - [Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_7/04_THU/landing-pages): **checkr.com**
-  - [Friday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_7/04_THU/landing-pages): Atelier Blockchain (Ruby)
+  - [Friday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_7/05_FRI): Atelier Blockchain (Ruby)
 - **Week 8**
-  - Monday: 
-  - Tuesday: 
-  - Wednesday: 
+  - [Wednesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_8/03_WED): JavaScript **simon**
   - Thursday: 
   - Friday: 
 - **Week 9**
