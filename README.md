@@ -83,7 +83,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
   - [Friday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_7/05_FRI): Atelier Blockchain (Ruby)
 - **Week 8**
   - [Wednesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_8/03_WED/simon): JavaScript - **Simon**
-  - Thursday: 
+  - [Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_8/04_THU/testing_jquery): jQuery - **jQuery tabs**
   - Friday: 
 - **Week 9**
   - Monday: 
