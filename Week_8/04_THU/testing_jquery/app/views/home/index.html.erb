@@ -1,18 +1,23 @@
-<h1>Resto trop bien !</h1>
-<p>Miam ici on mange bien</p>
 <div id="container">
-    <div id="menu">
-        <button>Présentation</button>
-        <button>Menu</button>
-        <button>Lorem</button>
+    <h1>Resto trop bien !</h1>
+    <p>Miam ici on mange bien</p>
+    <div>
+        <button value="1">Présentation</button>
+        <button value="2">Menu</button>
+        <button value="3">Lorem</button>
     </div>
-    <div id="screen_1" class="screen">
-        <h2>Présentation</h2>
-    </div>
-    <div id="screen_2" class="screen">
-        <h2>Menu</h2>
-    </div>
-    <div id="screen_3" class="screen">
-        <h2>Lorem</h2>
+    <div id="screen">
+        <div id="screen_1" class="screen">
+            <h2>Présentation</h2>
+        </div>
+        <div id="screen_2" class="screen">
+            <h2>Menu</h2>
+        </div>
+        </div>
+        <div id="screen_3" class="screen">
+            <h2>Lorem</h2>
+        </div>
     </div>
 </div>
+
+<%= javascript_include_tag 'index.js' %>

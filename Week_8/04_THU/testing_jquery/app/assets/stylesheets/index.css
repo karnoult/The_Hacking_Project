@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: "Courier New", Courier, monospace
+}
+
+h1 {
+    color: #484d6c;
+}
+
+h2 {
+    padding: 0px;
+    margin: 0px;
+}
+
+button {
+    border: 1px solid #484d6c;
+    padding: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0065a4;
+    color: white;
+}
+
+.screen {
+    width: 200px;
+    height: 200px;
+    background-color: #0065a4;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+#screen_2, #screen_3 {
+    display: none;
+}
