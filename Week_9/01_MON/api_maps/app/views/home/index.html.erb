@@ -1,0 +1,37 @@
+<p>Create a simple site that has just a Google map on it and a form where the user can enter a latitude and longitude and a message.<br />
+When the form is submitted, a marker is placed on the map in that location.<br />
+Clicking the marker should bring up the message that was entered (you don’t need to create this functionality yourself – if you set up the marker properly then Maps will do it for you).</p>
+
+<%= form_for :map, url: root_path, method: :get do |f| %>
+    <%= f.text_field :latitude, placeholder: 'latitude' %><br />
+    <%= f.text_field :longitude, placeholder: 'longitude' %><br />
+    <%= f.text_field :message, placeholder: 'your message' %><br />
+    <%= f.submit 'submit' %><br />
+<% end %>
+
+<div id="map">
+</div>
+
+<%= javascript_tag do %>
+    var map;
+    function initMap() {
+        var myLatlng = new google.maps.LatLng(<%= @latitude %>, <%= @longitude %>);
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: myLatlng,
+            zoom: 6
+        });
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map
+        });
+        var infowindow = new google.maps.InfoWindow({
+            content: '<%= @message %>'
+        });
+        marker.addListener('click', function() {
+            infowindow.open(map, marker);
+        });
+    }
+<% end  %>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_API'] %>&callback=initMap"
+async defer></script>
