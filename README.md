@@ -81,10 +81,8 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
 - **Week 8**
   - [Wednesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_8/03_WED/simon): JavaScript - **Simon**
   - [Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_8/04_THU/testing_jquery): jQuery - **jQuery tabs**
-  - Friday: 
 - **Week 9**
-  - Monday: 
-  - Tuesday: 
+  - [Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_9/02_TUE/api_maps): JavaScript (API) - **Google Maps API**
   - Wednesday: 
   - Thursday: 
   - Friday: 
