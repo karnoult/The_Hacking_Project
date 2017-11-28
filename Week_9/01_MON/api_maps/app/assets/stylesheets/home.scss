@@ -33,8 +33,11 @@ form {
 
 input {
     width: 300px;
-    height: 15px;
+    height: 25px;
+    line-height: 25px;
     margin: 5px;
+    padding-left: 5px;
+    border: 0;
 }
 
 input.field_map {
@@ -50,4 +53,17 @@ input#submit {
 #map {
     height: 100%;
     border-radius: 5px;
+}
+
+.alert-danger {
+    width: 100%;
+    text-align: center;
+    background-color: #c52121;
+    color: white;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+}
+
+.field_with_errors > input {
+    background-color: #ff9595;
 }
