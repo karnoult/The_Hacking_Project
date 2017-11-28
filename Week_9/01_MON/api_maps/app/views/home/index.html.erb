@@ -2,11 +2,11 @@
 When the form is submitted, a marker is placed on the map in that location.<br />
 Clicking the marker should bring up the message that was entered (you don’t need to create this functionality yourself – if you set up the marker properly then Maps will do it for you).</p>
 
-<%= form_for :map, url: root_path, method: :get do |f| %>
-    <%= f.text_field :latitude, placeholder: 'latitude' %><br />
-    <%= f.text_field :longitude, placeholder: 'longitude' %><br />
-    <%= f.text_field :message, placeholder: 'your message' %><br />
-    <%= f.submit 'submit' %><br />
+<%= form_for @map, url: root_path, method: :get do |f| %>
+    <%= f.text_field :latitude, placeholder: 'latitude', class: 'field_map', validate: true %><br />
+    <%= f.text_field :longitude, placeholder: 'longitude', class: 'field_map', validate: true %><br />
+    <%= f.text_field :message, placeholder: 'your message', class: 'field_map', validate: true %><br />
+    <%= f.submit 'submit', id: 'submit' %><br />
 <% end %>
 
 <div id="map">
@@ -15,7 +15,7 @@ Clicking the marker should bring up the message that was entered (you don’t ne
 <%= javascript_tag do %>
     var map;
     function initMap() {
-        var myLatlng = new google.maps.LatLng(<%= @latitude %>, <%= @longitude %>);
+        var myLatlng = new google.maps.LatLng(<%= @map.latitude %>, <%= @map.longitude %>);
         map = new google.maps.Map(document.getElementById('map'), {
             center: myLatlng,
             zoom: 6
@@ -25,7 +25,7 @@ Clicking the marker should bring up the message that was entered (you don’t ne
             map: map
         });
         var infowindow = new google.maps.InfoWindow({
-            content: '<%= @message %>'
+            content: '<%= @map.message %>'
         });
         marker.addListener('click', function() {
             infowindow.open(map, marker);
