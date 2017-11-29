@@ -1,24 +1,7 @@
 <h1>Emails/ajax.</h1>
 
-<div>
-    <table>
-        <thead>
-            <tr>
-                <th>Object</th>
-            </tr>
-        </thead>
-        <tbody>
-    <% @emails.each do |email| %>
-            <tr>
-                <td>
-                    <%= link_to show_content_path(id: email.id), remote: true do %>
-                        <% email.object %>
-                    <% end %>
-                </td>
-            </tr>
-    <% end %>
-        </tbody>
-    </table>
+<div id="emails">
+    <%= render 'emails' %>
 </div>
 <div id="content">
 </div>
