@@ -1,1 +1,1 @@
-![screenshot](public/screenshot_maps.png?raw=true)
+![screenshot](public/screenshot_mails.png?raw=true)
