@@ -83,6 +83,4 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
   - [Thursday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_8/04_THU/testing_jquery): jQuery - **jQuery tabs**
 - **Week 9**
   - [Tuesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_9/02_TUE/api_maps): JavaScript (API) - **Google Maps API**
-  - Wednesday: 
-  - Thursday: 
-  - Friday: 
+  - [Wednesday](https://github.com/karnoult/The_Hacking_Project/tree/master/Week_9/03_WED/email-viewer): JavaScript AJAX - **Emails**
