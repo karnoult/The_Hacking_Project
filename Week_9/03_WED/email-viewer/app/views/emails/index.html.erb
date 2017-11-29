@@ -10,7 +10,11 @@
         <tbody>
     <% @emails.each do |email| %>
             <tr>
-                <td><%= email.object %></td>
+                <td>
+                    <%= link_to show_content_path(id: email.id), remote: true do %>
+                        <% email.object %>
+                    <% end %>
+                </td>
             </tr>
     <% end %>
         </tbody>
