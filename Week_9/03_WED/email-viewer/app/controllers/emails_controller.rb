@@ -1,22 +1,19 @@
 class EmailsController < ApplicationController
   def index
-    @emails = Email.all
+    @emails = Email.order('id').all
   end
 
   def delete
     @email = Email.destroy(params[:id])
-    @emails = Email.all
-
-    respond_to do |format|
-      format.js
-    end
+    @emails = Email.order('id').all
   end
 
   def show_content
     @email = Email.find(params[:id])
-
-    respond_to do |format|
-      format.js
+    @emails = Email.order('id').all
+    unless @email.read
+      @email.read = 1
+      @email.save
     end
   end
 end

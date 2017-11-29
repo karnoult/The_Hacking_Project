@@ -1,5 +1,3 @@
 <h3><%= @email.object %></h3>
 <p><%= @email.body %></p>
 <%= link_to 'delete', delete_path(id: @email.id), remote: true %>
-
-<%# , data: { confirm: "Are you sure?" } %>

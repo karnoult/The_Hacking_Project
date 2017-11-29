@@ -7,7 +7,12 @@
     <tbody>
     <% @emails.each do |email| %>
         <tr>
-            <td>
+            <% if email.read %>
+                <% email_read = '1' %>
+            <% else %>
+                <% email_read = '0' %>
+            <% end %>
+            <td class="read_<%= email_read %>">
                 <%= link_to show_content_path(id: email.id), remote: true do %>
                     <% email.object %>
                 <% end %>

@@ -3,8 +3,20 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
+    width: 100%;
+}
+
+#container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: rgb(21, 60, 108);
 }
 
 table {
@@ -14,17 +26,20 @@ table {
 
 th {
     background-color: #af0606;
-    border: solid 1px #ff4a4a;
     color: white;
-}
-
-td {
-    border: solid 1px #3f3f3f;
-    cursor: pointer;
 }
 
 #content {
     width: 500px;
     height: 300px;
-    background-color: #85e9e3;
+    border: solid 1px black;
+    margin-left: 20px;
+}
+
+.read_0 {
+    background-color: #ffbfbf;
+}
+
+.read_1 {
+    background-color: #defffd;
 }
