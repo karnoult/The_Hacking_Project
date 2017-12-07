@@ -7,6 +7,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
 - **[w3schools](https://www.w3schools.com/)** (HTML / CSS / JS / NodeJS)
 - **[HTML](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference)**
   - [Guide Flexbox](https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/la-mise-en-page-avec-flexbox)
+  - [Compatibilité navigateurs](https://caniuse.com/)
 - **[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)**
   - Frameworks
     - [Bootstrap](http://getbootstrap.com/)
