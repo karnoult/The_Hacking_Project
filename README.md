@@ -42,6 +42,7 @@ Plus d'info sur The Hacking Project : [ici](http://www.thehackingproject.org/)
   - **[MailDev](http://danfarrelly.nyc/MailDev/)**
   - [Surge](http://surge.sh/) (Static web publishing)
   - [Visual Studio Code](https://code.visualstudio.com/docs/languages/html)
+  - **[Google Maps API](https://developers.google.com/maps/documentation/javascript/reference?hl=fr)**
 
 ### Cursus
 
